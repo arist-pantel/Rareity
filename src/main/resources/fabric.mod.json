@@ -3,17 +3,16 @@
 	"id": "rareity",
 	"version": "${version}",
 	"name": "rareity",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Client-side SkyBlock drop animation previews with cached official Hypixel rod textures.",
 	"authors": [
-		"Me!"
+		"Aristomenis Pantelopoulos"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/arist-pantel/Rareity"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/rareity/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
 			"com.aristomenis.rareity.Rareity"
@@ -33,6 +32,6 @@
 		"fabricloader": ">=0.19.5",
 		"minecraft": "~26.2",
 		"java": ">=25",
-		"fabric-api": "*"
+		"fabric-api": ">=0.161.0"
 	}
 }
