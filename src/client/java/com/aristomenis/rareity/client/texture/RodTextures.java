@@ -54,6 +54,13 @@ public final class RodTextures {
                         var result = HypixelPackCache.load(directory);
 
                         assets = result.rods();
+                        try {
+                            com.aristomenis.rareity.client.reward.FishingRewardAssets.prepare(
+                                    directory.resolve(result.hash() + ".zip")
+                            );
+                        } catch (Exception error) {
+                            LOG.warn("Could not prepare reward textures", error);
+                        }
 
                         status = "Ready: "
                                 + assets.size()
@@ -95,7 +102,6 @@ public final class RodTextures {
                 && assets.containsKey(expected);
     }
 
-    // Called on Minecraft's client thread.
     public static Identifier texture(Identifier model) {
         if (model == null) {
             return null;

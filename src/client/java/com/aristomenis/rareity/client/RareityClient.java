@@ -3,7 +3,10 @@ package com.aristomenis.rareity.client;
 import com.aristomenis.rareity.client.animation.AnimationManager;
 import com.aristomenis.rareity.client.command.RareityCommands;
 import com.aristomenis.rareity.client.item.RodCache;
+import com.aristomenis.rareity.client.reward.FishingPrices;
+import com.aristomenis.rareity.client.reward.FishingRewardAssets;
 import com.aristomenis.rareity.client.texture.RodTextures;
+import com.aristomenis.rareity.client.detection.FishingDropDetector;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
@@ -17,20 +20,29 @@ public class RareityClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		RodTextures.initialize();
+		FishingPrices.initialize();
 		RodCache.register();
 
 		AnimationManager manager = new AnimationManager();
 
 		HudElementRegistry.attachElementBefore(
 				VanillaHudElements.CHAT,
-				Identifier.fromNamespaceAndPath("rareity", "drop_overlay"),
+				Identifier.fromNamespaceAndPath(
+						"rareity",
+						"drop_overlay"
+				),
 				manager::render
 		);
 
 		RareityCommands.register(manager);
+		FishingDropDetector.register(manager);
 
 		ClientLifecycleEvents.CLIENT_STOPPING.register(
-				client -> RodTextures.close()
+				client -> {
+					RodTextures.close();
+					FishingRewardAssets.close();
+					FishingPrices.close();
+				}
 		);
 	}
 }

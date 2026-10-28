@@ -12,13 +12,9 @@ import java.time.Duration;
 import java.util.*;
 import java.util.zip.*;
 
-/**
- * Network and ZIP work only.
- * Does not touch Minecraft's renderer.
- */
+
 public final class HypixelPackCache {
 
-    // Pack format used by Minecraft 26.2.
     public static final int PACK_FORMAT = 97;
 
     private static final URI API = URI.create(
@@ -58,7 +54,6 @@ public final class HypixelPackCache {
         try {
             JsonObject version;
 
-            // Check API metadata at most once per day.
             boolean recent = Files.isRegularFile(manifest)
                     && System.currentTimeMillis()
                     - Files.getLastModifiedTime(manifest).toMillis()
@@ -125,7 +120,6 @@ public final class HypixelPackCache {
             failure = error;
         }
 
-        // Use the last verified pack if the API is unavailable.
         if (Files.isRegularFile(manifest)) {
             try {
                 JsonObject version = JsonParser.parseString(
@@ -144,7 +138,7 @@ public final class HypixelPackCache {
                 }
 
             } catch (Exception ignored) {
-                // Report the original failure if fallback also fails.
+
             }
         }
 
@@ -211,7 +205,6 @@ public final class HypixelPackCache {
 
                     String model = castModel(item);
 
-                    // Never silently select the normal line/bobber variant.
                     if (model == null) {
                         continue;
                     }
@@ -227,7 +220,6 @@ public final class HypixelPackCache {
                             assetPath(texture, "textures", ".png")
                     );
 
-                    // This renderer supports static 16x16 rod textures.
                     if (!isStatic16Png(png)) {
                         continue;
                     }
@@ -241,7 +233,7 @@ public final class HypixelPackCache {
                     rods.put(itemId, new Asset(png));
 
                 } catch (IOException | RuntimeException ignored) {
-                    // A changed item must not stop other rods loading.
+
                 }
             }
         }
@@ -408,7 +400,6 @@ public final class HypixelPackCache {
 
         InputStream body = response.body();
 
-        // Also cover a server that sends headers and then stalls.
         try (var deadline =
                      java.util.concurrent.Executors.newSingleThreadScheduledExecutor()) {
 
