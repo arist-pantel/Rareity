@@ -6,7 +6,7 @@ import com.aristomenis.rareity.client.detection.FishingDropDetector;
 import com.aristomenis.rareity.client.detection.FishingDropMessages;
 import com.aristomenis.rareity.client.reward.*;
 import com.aristomenis.rareity.client.texture.RodTextures;
-import com.aristomenis.rareity.client.animation.CorpseAnimation;
+import com.aristomenis.rareity.client.corpse.CorpseCommands;
 
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommands;
@@ -46,13 +46,7 @@ public final class RareityCommands {
                                         })
                         );
                     }
-                    test.then(
-                            ClientCommands.literal("corpse")
-                                    .executes(command -> {
-                                        manager.play(new CorpseAnimation());
-                                        return 1;
-                                    })
-                    );
+                    test.then(CorpseCommands.tests(manager));
                     var replay = ClientCommands.literal("replay");
 
                     for (FishingDrop drop : FishingDrop.values()) {
@@ -104,6 +98,7 @@ public final class RareityCommands {
                             ClientCommands.literal("rareity")
                                     .then(test)
                                     .then(drops)
+                                    .then(CorpseCommands.tools())
                                     .then(
                                             ClientCommands.literal("textures")
                                                     .executes(command -> {

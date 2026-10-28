@@ -4,13 +4,13 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
+import com.aristomenis.rareity.client.corpse.*;
+import java.util.Map;
 
 public final class CorpseAnimation implements DropAnimation {
 
     // Shake settings.
-// Later, the settings HUD will supply these values.
+    // Later, the settings HUD will supply these values.
     private static final double SHAKE_DURATION_SECONDS = 1.75;
     private static final double SHAKE_SPEED = 12.0; // Cycles per second.
     private static final double SHAKE_STRENGTH = 4.0; // GUI pixels.
@@ -37,10 +37,22 @@ public final class CorpseAnimation implements DropAnimation {
             0.75, 1.55, 2.35
     };
 
+    private final Map<CorpseDrop, Integer> loot;
+    private CorpseSelection selection;
     private long startedNanos;
+
+    public CorpseAnimation() {
+        this(Map.of(CorpseDrop.LOCKET, 1));
+    }
+
+    public CorpseAnimation(Map<CorpseDrop, Integer> loot) {
+        this.loot = Map.copyOf(loot);
+    }
 
     @Override
     public void start() {
+        selection = null;
+        CorpsePrices.refreshIfNeeded();
         startedNanos = System.nanoTime();
     }
 
@@ -132,54 +144,37 @@ public final class CorpseAnimation implements DropAnimation {
                     (time - (DURATION - 0.4)) / 0.4
             );
 
-            // Reveal the example reward behind the clearing smoke.
-            if (reveal > 0.0 && fade > 0.0) {
-                float scale = (float) (
-                        2.5 * reveal * fade
-                );
+            // Freeze the winner at reveal time, giving the background cache
+            // the whole introduction to finish loading its prices.
+            if (selection == null) {
+                var prices = CorpsePrices.snapshot();
+                selection = CorpseSelection.choose(loot, drop -> {
+                    var quote = prices.get(drop);
+                    return quote == null ? Double.NaN : quote.unitPrice();
+                });
+                org.slf4j.LoggerFactory.getLogger("rareity").info(
+                        "Corpse reveal: {}; comparison incomplete: {}",
+                        selection.drop(), selection.incomplete());
+            }
 
+            if (reveal > 0.0 && fade > 0.0) {
+                float scale = (float) (2.5 * reveal * fade);
                 float rewardY = centerY - 10
                         + (float) (12 * (1.0 - reveal));
-
-                graphics.pose().pushMatrix();
-
-                try {
-                    graphics.pose().translate(
-                            centerX,
-                            rewardY
-                    );
-
-                    graphics.pose().scale(scale, scale);
-
-                    graphics.item(
-                            new ItemStack(Items.DRAGON_EGG),
-                            -8,
-                            -8
-                    );
-                } finally {
-                    graphics.pose().popMatrix();
-                }
-
-                int alpha = (int) Math.round(
-                        255 * reveal * fade
-                );
-
+                CorpseTextures.render(graphics, selection.drop(), centerX, rewardY, scale);
+                int alpha = (int) Math.round(255 * reveal * fade);
                 if (alpha > 3) {
-                    drawCenteredText(
-                            graphics,
-                            "Dragon Egg",
-                            centerX,
-                            centerY + 18,
-                            (alpha << 24) | 0xFF55FF
-                    );
-
-                    drawCenteredText(
-                            graphics,
-                            "[PREVIEW]",
-                            centerX,
-                            centerY + 31,
-                            (alpha << 24) | 0xAAAAAA
-                    );
+                    CorpseDrop drop = selection.drop();
+                    String name = drop == null ? "No rare drop!"
+                            : drop.displayName + (selection.quantity() > 1 ? " x" + selection.quantity() : "");
+                    drawCenteredText(graphics, name, centerX, centerY + 18,
+                            (alpha << 24) | (drop == null ? 0xFF5555 : drop.color));
+                    drawCenteredText(graphics, drop == null ? "Better luck next corpse!" : CorpsePrices.line(drop),
+                            centerX, centerY + 31, (alpha << 24) | 0x55FFFF);
+                    if (selection.incomplete()) {
+                        drawCenteredText(graphics, "Comparison incomplete: missing prices", centerX,
+                                centerY + 44, (alpha << 24) | 0xFFAA00);
+                    }
                 }
             }
 

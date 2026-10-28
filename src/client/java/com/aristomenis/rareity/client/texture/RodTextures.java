@@ -62,6 +62,13 @@ public final class RodTextures {
                             LOG.warn("Could not prepare reward textures", error);
                         }
 
+                        try {
+                            com.aristomenis.rareity.client.corpse.CorpseTextures.prepare(
+                                    directory.resolve(result.hash() + ".zip"));
+                        } catch (Exception error) {
+                            LOG.warn("Could not prepare corpse reward textures", error);
+                        }
+
                         status = "Ready: "
                                 + assets.size()
                                 + " official rod textures"
