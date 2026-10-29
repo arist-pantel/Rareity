@@ -63,7 +63,7 @@ public final class CorpseTextures {
         if (drop != null && pngs.containsKey(drop) && !uploaded.containsKey(drop) && !failed.contains(drop)) {
             try {
                 var image = NativeImage.read(new ByteArrayInputStream(pngs.get(drop)));
-                Identifier id = Identifier.fromNamespaceAndPath("rareity", "corpse/" + drop.command);
+                Identifier id = Identifier.fromNamespaceAndPath("rareity", "com/aristomenis/rareity/client/corpse/" + drop.command);
                 Minecraft.getInstance().getTextureManager().register(id,
                         new DynamicTexture(() -> "Rareity " + drop.displayName, image));
                 uploaded.put(drop, id);

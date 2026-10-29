@@ -9,7 +9,7 @@ import java.util.Map;
 public final class CorpseCommands {
     private CorpseCommands() {}
     public static LiteralArgumentBuilder<FabricClientCommandSource> tests(AnimationManager manager) {
-        var node = ClientCommands.literal("corpse").executes(context -> {
+        var node = ClientCommands.literal("com/aristomenis/rareity/client/corpse").executes(context -> {
             CorpseDropDetector.preview(manager, Map.of(CorpseDrop.LOCKET, 1)); return 1;
         });
         for (CorpseDrop drop : CorpseDrop.values()) {

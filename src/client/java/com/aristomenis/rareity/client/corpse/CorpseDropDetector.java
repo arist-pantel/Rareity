@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import java.util.*;
 
 public final class CorpseDropDetector {
-    private static final CorpseLootParser PARSER = new CorpseLootParser();
+    private static final com.aristomenis.rareity.client.corpse.CorpseLootParser PARSER = new com.aristomenis.rareity.client.corpse.CorpseLootParser();
     private static Object lastLevel;
     private static long nextPriceCheck;
     private static int confirmed;
@@ -30,7 +30,7 @@ public final class CorpseDropDetector {
             if (!active()) { PARSER.reset(); return; }
             long now = now();
             PARSER.poll(now).ifPresent(batch -> confirm(manager, batch));
-            if (now >= nextPriceCheck) { nextPriceCheck = now + 60_000; CorpsePrices.refreshIfNeeded(); }
+            if (now >= nextPriceCheck) { nextPriceCheck = now + 60_000; com.aristomenis.rareity.client.corpse.CorpsePrices.refreshIfNeeded(); }
         });
         ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> {
             PARSER.reset(); lastLevel = null; confirmed = 0; nextPriceCheck = 0;

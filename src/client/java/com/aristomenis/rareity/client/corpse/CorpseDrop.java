@@ -12,7 +12,7 @@ public enum CorpseDrop {
     LOCKET("locket", "Shattered Locket", "SHATTERED_PENDANT", 0xFFAA00, null,
             "d185a3ddade2cdadf404c91457331764fadc920a2142197f995910686e8bd688"),
     DYE("dye", "Frostbitten Dye", "DYE_FROSTBITTEN", 0x00AAAA, null,
-            "e22b92e8c9b9db35f5ac2ad1235655cead444e50753c16e9a7184bca3a745729");
+            "e22b92e8c9b9db35f5ac2ad1235655cead444e50753c56e9a7184bca3a745729");
 
     public final String command, displayName, itemId, texturePath, skinHash;
     public final int color;
