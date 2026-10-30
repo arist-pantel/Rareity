@@ -2,6 +2,8 @@ package com.aristomenis.rareity.client;
 
 import com.aristomenis.rareity.client.animation.AnimationManager;
 import com.aristomenis.rareity.client.corpse.*;
+import com.aristomenis.rareity.client.scatha.ScathaAssets;
+import com.aristomenis.rareity.client.scatha.ScathaDetector;
 import com.aristomenis.rareity.client.command.RareityCommands;
 import com.aristomenis.rareity.client.item.RodCache;
 import com.aristomenis.rareity.client.reward.FishingPrices;
@@ -39,6 +41,7 @@ public class RareityClient implements ClientModInitializer {
 		RareityCommands.register(manager);
 		FishingDropDetector.register(manager);
 		CorpseDropDetector.register(manager);
+		ScathaDetector.register(manager);
 
 		ClientLifecycleEvents.CLIENT_STOPPING.register(
 				client -> {
@@ -47,6 +50,7 @@ public class RareityClient implements ClientModInitializer {
 					FishingPrices.close();
 					CorpsePrices.close();
 					CorpseTextures.close();
+					ScathaAssets.close();
 				}
 		);
 	}

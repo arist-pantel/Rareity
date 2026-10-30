@@ -13,7 +13,6 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/** Background market cache. Never performs HTTP on the rendering thread. */
 public final class CorpsePrices {
     public record Quote(double unitPrice, long timestamp) {}
     private static final long MINUTE = 60_000;
@@ -76,7 +75,6 @@ public final class CorpsePrices {
                         Map<CorpseDrop, Quote> update = scanAuctions();
                         Map<CorpseDrop, Quote> copy = new EnumMap<>(CorpseDrop.class);
                         copy.putAll(quotes);
-                        // A successful complete scan with no listing invalidates an old BIN.
                         for (CorpseDrop drop : CorpseDrop.values()) if (!drop.bazaar()) copy.remove(drop);
                         copy.putAll(update); quotes = Map.copyOf(copy);
                         nextAuctions = System.currentTimeMillis() + 15 * MINUTE;
@@ -97,7 +95,6 @@ public final class CorpsePrices {
         for (CorpseDrop drop : CorpseDrop.values()) {
             if (!drop.bazaar() || !products.has(drop.itemId)) continue;
             double best = 0;
-            // Hypixel's sell_summary is the order book filled by an instant sell.
             for (JsonElement element : products.getAsJsonObject(drop.itemId).getAsJsonArray("sell_summary")) {
                 JsonObject row = element.getAsJsonObject();
                 double price = row.get("pricePerUnit").getAsDouble();

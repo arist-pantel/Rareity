@@ -16,7 +16,6 @@ public record CorpseSelection(CorpseDrop drop, int quantity, boolean incomplete)
             double price = unitPrice.applyAsDouble(drop);
             boolean known = Double.isFinite(price) && price > 0;
             if (!known) missing = true;
-            // Quantity deliberately does not participate in the comparison.
             if (winner == null || (known && price > best)) {
                 winner = drop;
                 best = known ? price : -1;

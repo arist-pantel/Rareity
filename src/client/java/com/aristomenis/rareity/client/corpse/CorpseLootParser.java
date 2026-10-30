@@ -3,7 +3,6 @@ package com.aristomenis.rareity.client.corpse;
 import java.util.*;
 import java.util.regex.Pattern;
 
-/** Collects one server loot block, rather than reacting to individual item names. */
 public final class CorpseLootParser {
     private static final Pattern HEADER = Pattern.compile(
             "^(LAPIS|UMBER|TUNGSTEN|VANGUARD) CORPSE LOOT!$");
@@ -19,7 +18,6 @@ public final class CorpseLootParser {
 
     public List<Batch> accept(String message, long now) {
         List<Batch> completed = new ArrayList<>();
-        // Some servers send the complete panel in one component, others send rows.
         for (String original : message.split("\\R")) {
             String line = clean(original);
             var header = HEADER.matcher(line);
@@ -37,7 +35,6 @@ public final class CorpseLootParser {
                 else reset();
                 continue;
             }
-            // SkyHanni profit, player chat and unrelated messages are never loot rows.
             if (!rewards || line.isBlank() || line.startsWith("[")) continue;
             boolean recognized = false;
             for (CorpseDrop drop : CorpseDrop.values()) {
@@ -54,7 +51,6 @@ public final class CorpseLootParser {
                 } catch (NumberFormatException ignored) {}
                 break;
             }
-            // Ordinary loot is needed to distinguish a genuine dud from an empty panel.
             String plain = original.replaceAll("§[0-9a-fk-orxA-FK-ORX]", "")
                     .replace('\u00a0', ' ');
             if (recognized || plain.matches("^\\s{3,}[^\\[+].*")) {
@@ -66,7 +62,6 @@ public final class CorpseLootParser {
     }
 
     public Optional<Batch> poll(long now) {
-        // Support panels without a closing border, but wait for the whole burst.
         if (collecting && rewards && hasRows && now - lastRowAt >= QUIET_MS) {
             return Optional.of(finish());
         }

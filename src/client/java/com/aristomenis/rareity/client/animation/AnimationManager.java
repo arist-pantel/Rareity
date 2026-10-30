@@ -34,6 +34,15 @@ public final class AnimationManager {
         }
     }
 
+    public void cancel(DropAnimation animation) {
+        if (active == animation) active = null;
+        queue.remove(animation);
+    }
+
+    public boolean contains(DropAnimation animation) {
+        return active == animation || queue.contains(animation);
+    }
+
     private void clear() {
         active = null;
         queue.clear();

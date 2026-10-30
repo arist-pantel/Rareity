@@ -27,7 +27,6 @@ public final class CorpseTextures {
     private static final Set<CorpseDrop> failed = EnumSet.noneOf(CorpseDrop.class);
     private CorpseTextures() {}
 
-    // Called by the existing official-pack worker; no duplicate pack download.
     public static void prepare(Path pack) throws IOException {
         Map<CorpseDrop, byte[]> loaded = new EnumMap<>(CorpseDrop.class);
         try (ZipFile zip = new ZipFile(pack.toFile())) {
@@ -85,7 +84,6 @@ public final class CorpseTextures {
         } finally { graphics.pose().popMatrix(); }
     }
     private static void clown(GuiGraphicsExtractor graphics) {
-        // A small pixel clown, since Minecraft's font does not reliably contain the emoji.
         graphics.fill(-9, -5, -5, 5, 0xFFEE3333);
         graphics.fill(5, -5, 9, 5, 0xFFEE3333);
         for (int row = -7; row <= 7; row++) {
