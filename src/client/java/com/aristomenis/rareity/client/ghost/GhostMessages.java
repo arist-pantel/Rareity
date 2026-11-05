@@ -42,5 +42,18 @@ public final class GhostMessages {
         }
         return null;
     }
-    public static boolean isMistLine(String line) { return MIST.matcher(clean(line)).matches(); }
+    public static boolean isMistLine(String line) {
+        if (line == null || line.indexOf('\n') >= 0
+                || line.indexOf('\r') >= 0) {
+            return false;
+        }
+
+        String location = clean(line)
+                .replaceAll("\\p{Cf}", "")
+                .replaceAll("[\\p{Z}\\s]+", " ")
+                .strip()
+                .replaceFirst("^[^A-Za-z0-9]+", "");
+
+        return MIST.matcher(location).matches();
+    }
 }
