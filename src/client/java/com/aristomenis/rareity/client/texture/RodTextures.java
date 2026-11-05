@@ -76,6 +76,13 @@ public final class RodTextures {
                             LOG.warn("Could not prepare Scatha reward textures", error);
                         }
 
+                        try {
+                            com.aristomenis.rareity.client.ghost.GhostAssets.prepare(
+                                    directory.resolve(result.hash() + ".zip"));
+                        } catch (Exception error) {
+                            LOG.warn("Could not prepare Ghost reward textures", error);
+                        }
+
                         status = "Ready: "
                                 + assets.size()
                                 + " official rod textures"
