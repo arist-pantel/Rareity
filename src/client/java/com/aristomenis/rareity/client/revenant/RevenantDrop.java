@@ -1,6 +1,6 @@
 package com.aristomenis.rareity.client.revenant;
 
-/ublic enum RevenantDrop {
+public enum RevenantDrop {
     HAND("severed_hand", "Severed Hand", 0xFFAA00, "111ee65b56d50cd1ef81a7d33ae2421927592ccd92ad7c2ec4fb1aac29ba422f", true),
     PARAGON("paragon_shard", "Paragon Shard", 0xFFAA00, "75b449420f3c1891bf663c0623f1210bbbe066866cdc4c8da1cd1f9cbfa1eee", false),
     REVENANT("revenant_shard", "Revenant Shard", 0x5555FF, "1fc0184473fe882d2895ce7cbc8197bd40ff70bf10d3745de97b6c2a9c5fc78f", false),
