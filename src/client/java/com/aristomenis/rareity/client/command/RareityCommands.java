@@ -9,6 +9,7 @@ import com.aristomenis.rareity.client.texture.RodTextures;
 import com.aristomenis.rareity.client.corpse.CorpseCommands;
 import com.aristomenis.rareity.client.scatha.ScathaCommands;
 import com.aristomenis.rareity.client.ghost.GhostCommands;
+import com.aristomenis.rareity.client.revenant.RevenantCommands;
 
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommands;
@@ -51,6 +52,7 @@ public final class RareityCommands {
                     test.then(CorpseCommands.tests(manager));
                     test.then(ScathaCommands.tests(manager));
                     test.then(GhostCommands.tests(manager));
+                    test.then(RevenantCommands.tests(manager));
                     var replay = ClientCommands.literal("replay");
 
                     for (FishingDrop drop : FishingDrop.values()) {
@@ -105,6 +107,7 @@ public final class RareityCommands {
                                     .then(CorpseCommands.tools())
                                     .then(ScathaCommands.tools())
                                     .then(GhostCommands.tools())
+                                    .then(RevenantCommands.tools())
                                     .then(
                                             ClientCommands.literal("textures")
                                                     .executes(command -> {

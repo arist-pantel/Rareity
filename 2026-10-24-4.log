@@ -1,0 +1,656 @@
+[23:32:41] [main/INFO]: Loading Minecraft 26.2 with Fabric Loader 0.20.1
+[23:32:41] [main/INFO]: Loading 50 mods:
+	- fabric-api 0.161.0+26.2
+	   |-- fabric-advancement-api-v1 1.0.0+58719a3b9e
+	   |-- fabric-api-base 2.0.4+ece063239e
+	   |-- fabric-api-lookup-api-v1 2.0.18+11e1c9a39e
+	   |-- fabric-biome-api-v1 18.0.6+c7bd5b8e9e
+	   |-- fabric-block-api-v1 3.1.0+53515aab9e
+	   |-- fabric-block-getter-api-v2 2.0.7+ec56b6019e
+	   |-- fabric-command-api-v2 3.1.0+00cb03469e
+	   |-- fabric-content-registries-v0 11.3.2+37b1aa249e
+	   |-- fabric-convention-tags-v2 4.7.1+1f023a9e9e
+	   |-- fabric-crash-report-info-v1 1.0.5+086d547a9e
+	   |-- fabric-creative-tab-api-v1 5.0.15+6468574f9e
+	   |-- fabric-data-attachment-api-v1 2.2.19+515ac5339e
+	   |-- fabric-data-generation-api-v1 25.6.0+c0da0b829e
+	   |-- fabric-debug-api-v1 1.0.2+c792624d9e
+	   |-- fabric-dimensions-v1 5.1.12+515ac5339e
+	   |-- fabric-entity-events-v1 5.0.5+06488ac19e
+	   |-- fabric-events-interaction-v0 5.2.8+515ac5339e
+	   |-- fabric-game-rule-api-v1 4.0.8+46a6d00c9e
+	   |-- fabric-item-api-v1 14.5.0+c68f6cbe9e
+	   |-- fabric-key-mapping-api-v1 2.0.5+e2bdee789e
+	   |-- fabric-lifecycle-events-v1 4.1.4+29b6eb019e
+	   |-- fabric-loot-api-v3 3.0.17+06488ac19e
+	   |-- fabric-menu-api-v1 2.0.17+086d547a9e
+	   |-- fabric-message-api-v1 7.0.8+bb2ed3f79e
+	   |-- fabric-model-loading-api-v1 8.0.17+c80601bb9e
+	   |-- fabric-networking-api-v1 6.3.4+2989c6a09e
+	   |-- fabric-object-builder-api-v1 24.1.1+6fcd5f039e
+	   |-- fabric-particles-v1 5.0.19+d1756aa99e
+	   |-- fabric-permission-api-v1 1.0.5+e442d8d09e
+	   |-- fabric-recipe-api-v1 9.0.22+11e1c9a39e
+	   |-- fabric-registry-sync-v0 7.1.1+c7bd5b8e9e
+	   |-- fabric-renderer-api-v1 14.1.4+2b0d8a229e
+	   |-- fabric-renderer-indigo 9.1.4+2b0d8a229e
+	   |-- fabric-rendering-fluids-v1 6.0.4+06488ac19e
+	   |-- fabric-rendering-v1 25.3.3+515ac5339e
+	   |-- fabric-resource-conditions-api-v1 6.1.0+10e9a28b9e
+	   |-- fabric-resource-loader-v0 3.3.20+4fc5413f9e
+	   |-- fabric-resource-loader-v1 2.0.13+9edec1269e
+	   |-- fabric-screen-api-v1 5.2.1+5087f8249e
+	   |-- fabric-serialization-api-v1 2.0.4+11a26f319e
+	   |-- fabric-sound-api-v1 2.0.5+11a26f319e
+	   |-- fabric-tag-api-v1 2.1.4+515ac5339e
+	   |-- fabric-transfer-api-v1 8.0.13+11dbb7d79e
+	   \-- fabric-transitive-access-wideners-v1 8.1.4+67c847259e
+	- fabricloader 0.20.1
+	   \-- mixinextras 0.5.5
+	- java 25
+	- minecraft 26.2
+	- rareity 1.0.0
+[23:32:46] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/appan/AppData/Roaming/ModrinthApp/meta/libraries/net/fabricmc/sponge-mixin/0.17.5+mixin.0.8.7/sponge-mixin-0.17.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[23:32:52] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[23:32:53] [Datafixer Bootstrap #0/INFO]: 295 Datafixer optimizations took 397 milliseconds
+[23:32:59] [Render thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[23:32:59] [Render thread/INFO]: Setting user: Luntick_
+[23:32:59] [Render thread/INFO]: Hello Fabric world!
+[23:32:59] [Render thread/INFO]: [Indigo] Registering Indigo renderer!
+[23:33:00] [Render thread/INFO]: Backend library: LWJGL version 3.4.1-snapshot
+[23:33:03] [Render thread/INFO]: Using graphics backend OpenGL, using drivers: 3.3.0 NVIDIA 596.71
+[23:33:03] [Render thread/INFO]: Using graphics device: NVIDIA RTX 500 Ada Generation Laptop GPU/PCIe/SSE2 (NVIDIA Corporation)
+[23:33:03] [Render thread/INFO]: Using graphics device extensions: GL_ARB_multi_draw_indirect, GL_ARB_buffer_storage, GL_ARB_shader_draw_parameters, GL_ARB_base_instance, GL_KHR_debug, GL_ARB_draw_indirect, GL_ARB_clip_control, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
+[23:33:04] [Render thread/INFO]: Reloading ResourceManager: vanilla, fabric-advancement-api-v1, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-getter-api-v2, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-creative-tab-api-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-debug-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-item-api-v1, fabric-key-mapping-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v3, fabric-menu-api-v1, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-permission-api-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-resource-loader-v1, fabric-screen-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, rareity
+[23:33:04] [Worker-Main-17/INFO]: Found unifont_pua-17.0.01.hex, loading
+[23:33:04] [Worker-Main-19/INFO]: Found unifont_all_no_pua-17.0.01.hex, loading
+[23:33:04] [Worker-Main-17/INFO]: Found unifont_jp_patch-17.0.01.hex, loading
+[23:33:07] [Render thread/INFO]: OpenAL initialized on device OpenAL Soft on Speakers (2- Realtek(R) Audio)
+[23:33:07] [Render thread/INFO]: Sound engine started
+[23:33:07] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[23:33:07] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[23:33:07] [Render thread/INFO]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[23:33:07] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[23:33:07] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[23:33:07] [Render thread/INFO]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[23:33:07] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[23:33:07] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[23:33:07] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[23:33:07] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[23:33:07] [Render thread/INFO]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[23:33:07] [Render thread/INFO]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[23:33:07] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[23:33:13] [Render thread/INFO]: Connecting to hypixel.net, 25565
+[23:33:15] [Render thread/INFO]: [System] [CHAT]                          
+[23:33:15] [Render thread/INFO]: [System] [CHAT] §b[MVP§d+§b] Luntick_§f §6spooked into the lobby!
+[23:33:15] [Render thread/WARN]: Received passengers for unknown entity
+[23:33:15] [Render thread/INFO]: [System] [CHAT] §aYou have §b70 §aunclaimed leveling rewards!
+[23:33:15] [Render thread/INFO]: [System] [CHAT] §eClick here to view them!
+[23:33:15] [Render thread/INFO]: [System] [CHAT] §aYou have §633 §aunclaimed achievement rewards!
+[23:33:15] [Render thread/INFO]: [System] [CHAT] §eClick here to view them!
+[23:33:15] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[23:33:16] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[23:33:16] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[23:33:16] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 2 reached during a single frame. New capacity will be 8.
+[23:33:16] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[23:33:16] [Worker-Main-19/ERROR]: Failed to verify signature on property Property[name=textures, value=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM4MWM1MjlkNTJlMDNjZDc0YzNiZjM4YmI2YmEzZmRlMTMzN2FlOWJmNTAzMzJmYWE4ODllMGEyOGU4MDgxZiJ9fX0=, signature=]
+java.security.SignatureException: Bad signature length: got 0 but was expecting 512
+	at java.base/sun.security.rsa.RSASignature.engineVerify(Unknown Source)
+	at java.base/java.security.Signature$Delegate.engineVerify(Unknown Source)
+	at java.base/java.security.Signature.verify(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.validateProperty(YggdrasilServicesKeyInfo.java:165)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.lambda$getPropertySignatureState$0(YggdrasilMinecraftSessionService.java:185)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.getPropertySignatureState(YggdrasilMinecraftSessionService.java:185)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.unpackTextures(YggdrasilMinecraftSessionService.java:128)
+	at knot//net.minecraft.client.resources.SkinManager$1.lambda$load$0(SkinManager.java:60)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[23:33:16] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[23:33:16] [Worker-Main-20/ERROR]: Failed to verify signature on property Property[name=textures, value=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgwOWQyZTY5NjEwZjFlNmI3NWZlMGQ0NTk4ZTQ0MWU1NjAzMjVkMmQ1MmQ5N2NmNjY4NTljNDRmYTNkOGE3OSJ9fX0=, signature=]
+java.security.SignatureException: Bad signature length: got 0 but was expecting 512
+	at java.base/sun.security.rsa.RSASignature.engineVerify(Unknown Source)
+	at java.base/java.security.Signature$Delegate.engineVerify(Unknown Source)
+	at java.base/java.security.Signature.verify(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.validateProperty(YggdrasilServicesKeyInfo.java:165)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.lambda$getPropertySignatureState$0(YggdrasilMinecraftSessionService.java:185)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.getPropertySignatureState(YggdrasilMinecraftSessionService.java:185)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.unpackTextures(YggdrasilMinecraftSessionService.java:128)
+	at knot//net.minecraft.client.resources.SkinManager$1.lambda$load$0(SkinManager.java:60)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[23:33:16] [Worker-Main-20/ERROR]: Failed to verify signature on property Property[name=textures, value=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgwOWQyZTY5NjEwZjFlNmI3NWZlMGQ0NTk4ZTQ0MWU1NjAzMjVkMmQ1MmQ5N2NmNjY4NTljNDRmYTNkOGE3OSJ9fX0=, signature=]
+java.security.SignatureException: Bad signature length: got 0 but was expecting 512
+	at java.base/sun.security.rsa.RSASignature.engineVerify(Unknown Source)
+	at java.base/java.security.Signature$Delegate.engineVerify(Unknown Source)
+	at java.base/java.security.Signature.verify(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.validateProperty(YggdrasilServicesKeyInfo.java:165)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.lambda$getPropertySignatureState$0(YggdrasilMinecraftSessionService.java:185)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.getPropertySignatureState(YggdrasilMinecraftSessionService.java:185)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.unpackTextures(YggdrasilMinecraftSessionService.java:128)
+	at knot//net.minecraft.client.resources.SkinManager$1.lambda$load$0(SkinManager.java:60)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[23:33:16] [Worker-Main-15/ERROR]: Failed to verify signature on property Property[name=textures, value=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDE3N2E5NGUyYmQwOGJiZDgzOTQ0NjU4YjM0MjAyYjY5YWMzNmMyOGE4NmQyOThjZmNjMDQ0ZWYyOGIzMDlkYiJ9fX0=, signature=]
+java.security.SignatureException: Bad signature length: got 0 but was expecting 512
+	at java.base/sun.security.rsa.RSASignature.engineVerify(Unknown Source)
+	at java.base/java.security.Signature$Delegate.engineVerify(Unknown Source)
+	at java.base/java.security.Signature.verify(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.validateProperty(YggdrasilServicesKeyInfo.java:165)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.lambda$getPropertySignatureState$0(YggdrasilMinecraftSessionService.java:185)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.getPropertySignatureState(YggdrasilMinecraftSessionService.java:185)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.unpackTextures(YggdrasilMinecraftSessionService.java:128)
+	at knot//net.minecraft.client.resources.SkinManager$1.lambda$load$0(SkinManager.java:60)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[23:33:16] [Worker-Main-19/ERROR]: Failed to verify signature on property Property[name=textures, value=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM4MWM1MjlkNTJlMDNjZDc0YzNiZjM4YmI2YmEzZmRlMTMzN2FlOWJmNTAzMzJmYWE4ODllMGEyOGU4MDgxZiJ9fX0=, signature=]
+java.security.SignatureException: Bad signature length: got 0 but was expecting 512
+	at java.base/sun.security.rsa.RSASignature.engineVerify(Unknown Source)
+	at java.base/java.security.Signature$Delegate.engineVerify(Unknown Source)
+	at java.base/java.security.Signature.verify(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.validateProperty(YggdrasilServicesKeyInfo.java:165)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.lambda$getPropertySignatureState$0(YggdrasilMinecraftSessionService.java:185)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.getPropertySignatureState(YggdrasilMinecraftSessionService.java:185)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.unpackTextures(YggdrasilMinecraftSessionService.java:128)
+	at knot//net.minecraft.client.resources.SkinManager$1.lambda$load$0(SkinManager.java:60)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[23:33:16] [Worker-Main-20/WARN]: Profile contained invalid signature for textures property (profile id: 04049c90-d3e9-4621-9caf-0000aaa42020)
+[23:33:16] [Worker-Main-19/WARN]: Profile contained invalid signature for textures property (profile id: 04049c90-d3e9-4621-9caf-0000aaa40502)
+[23:33:16] [Worker-Main-15/ERROR]: Failed to verify signature on property Property[name=textures, value=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDE3N2E5NGUyYmQwOGJiZDgzOTQ0NjU4YjM0MjAyYjY5YWMzNmMyOGE4NmQyOThjZmNjMDQ0ZWYyOGIzMDlkYiJ9fX0=, signature=]
+java.security.SignatureException: Bad signature length: got 0 but was expecting 512
+	at java.base/sun.security.rsa.RSASignature.engineVerify(Unknown Source)
+	at java.base/java.security.Signature$Delegate.engineVerify(Unknown Source)
+	at java.base/java.security.Signature.verify(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.validateProperty(YggdrasilServicesKeyInfo.java:165)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.lambda$getPropertySignatureState$0(YggdrasilMinecraftSessionService.java:185)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.getPropertySignatureState(YggdrasilMinecraftSessionService.java:185)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.unpackTextures(YggdrasilMinecraftSessionService.java:128)
+	at knot//net.minecraft.client.resources.SkinManager$1.lambda$load$0(SkinManager.java:60)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[23:33:16] [Worker-Main-15/WARN]: Profile contained invalid signature for textures property (profile id: 04049c90-d3e9-4621-9caf-0000aaa47478)
+[23:33:16] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[23:33:16] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
+[23:33:16] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[23:33:16] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
+[23:33:18] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[23:33:18] [Render thread/INFO]: [System] [CHAT] §b[MVP§c+§b] sofiag89§f §6spooked into the lobby!
+[23:33:19] [Render thread/INFO]: [System] [CHAT] Sending to server mini62BD...
+[23:33:20] [Download-14/INFO]: Returning cached file since actual hash matches requested
+[23:33:20] [Render thread/INFO]: Reloading ResourceManager: vanilla, fabric-advancement-api-v1, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-getter-api-v2, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-creative-tab-api-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-debug-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-item-api-v1, fabric-key-mapping-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v3, fabric-menu-api-v1, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-permission-api-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-resource-loader-v1, fabric-screen-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, rareity, server/00000000/242681e6-5e10-3cc8-8a64-451bdbf97e0b
+[23:33:20] [Worker-Main-6/INFO]: Found unifont_pua-17.0.01.hex, loading
+[23:33:20] [Worker-Main-9/INFO]: Found unifont_jp_patch-17.0.01.hex, loading
+[23:33:20] [Worker-Main-18/INFO]: Found unifont_all_no_pua-17.0.01.hex, loading
+[23:33:20] [Worker-Main-10/ERROR]: Couldn't parse item model 'hypixel_skyblock:item/island_relevant/safari/safari_belt' from pack 'server/00000000/242681e6-5e10-3cc8-8a64-451bdbf97e0b': Not a JSON object: "hypixel_skyblock:item/island_relevant/safari/safari_belt_common"
+[23:33:20] [Worker-Main-5/WARN]: Missing block model: hypixel_skyblock:item/cosmetic/taylor/fall26/model_tulip_tintable
+[23:33:21] [Worker-Main-12/WARN]: Missing textures in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_pollen_yellow:
+    hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_pollen_yellow
+    minecraft:model_pollen_yellow
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/decoration/statue/snake:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/decoration/statue/fly:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/island_relevant/safari/model_masterful_critter_capsule:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_petal_3_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_petal_5_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_globe_thistle_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_petal_2_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_candy_bean_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_petal_6_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_petal_4_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_large_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_petal_1_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/island_relevant/safari/model_critter_capsule:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_candy_mint_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/decoration/statue/eagle:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_leaf_maple_aut:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_candy_toffee_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/island_relevant/safari/model_critter_capsule_fail:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_petal_7_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_daisy_small_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_candy_lollipop_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_bell_tintable:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_candy_choc_cube:
+    particle
+[23:33:21] [Worker-Main-12/WARN]: Missing texture references in model hypixel_skyblock:item/cosmetic/taylor/fall26/model_flower_petal_8_tintable:
+    particle
+[23:33:21] [Render thread/INFO]: OpenAL initialized on device OpenAL Soft on Speakers (2- Realtek(R) Audio)
+[23:33:21] [Render thread/INFO]: Sound engine started
+[23:33:21] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[23:33:21] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[23:33:21] [Render thread/INFO]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[23:33:21] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[23:33:21] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[23:33:21] [Render thread/INFO]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[23:33:22] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[23:33:22] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[23:33:22] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[23:33:22] [Render thread/INFO]: Created: 1024x1024x0 minecraft:textures/atlas/items.png-atlas
+[23:33:22] [Render thread/INFO]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[23:33:22] [Render thread/INFO]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[23:33:22] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[23:33:22] [Render thread/WARN]: Received packet for unknown team NPCListShow: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team |||||||||||||||: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team 2by6ii8wo3: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team a58944d7b820: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team a999-76d80d5f: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team a2492030054: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team a8285dead2f2: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team h6c0ghoro7: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team 65fv87iwy8: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team a818-291b22b: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team team_1: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team a599-51927226: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team a6397af2d5ec: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team a679-79569b33: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team a669-231bfe54: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team a609-42b48e83: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team team_11: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team a908203421f7: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team NPCListHide: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team team_10: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team s4833b2b37: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team team_9: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team a63964f43ff6: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team team_8: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team team_7: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team a9084b6ace20: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team team_6: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team team_5: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team team_4: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team team_3: team action: REMOVE, player action: null
+[23:33:22] [Render thread/WARN]: Received packet for unknown team team_2: team action: REMOVE, player action: null
+[23:33:22] [Render thread/INFO]: [System] [CHAT]        
+[23:33:22] [Render thread/INFO]: [System] [CHAT] You haven't claimed your Spooky Rewards yet!
+[23:33:22] [Render thread/INFO]: [System] [CHAT] Talk to the Spooky Man in the Hub!
+[23:33:23] [Render thread/INFO]: [System] [CHAT] -----------------------------------------------------
+[23:33:23] [Render thread/INFO]: [System] [CHAT] You have just received 522,600 coins as interest in your co-op bank account!
+[23:33:23] [Render thread/INFO]: [System] [CHAT] -----------------------------------------------------
+[23:33:23] [Render thread/INFO]: [System] [CHAT]  
+[23:33:23] [Render thread/INFO]: [System] [CHAT] §f      §7You have §320 §7pending §3Bestiary Milestones §7to be claimed!
+[23:33:23] [Render thread/INFO]: [System] [CHAT] §f                  §6§l>>> §6§lCLICK HERE§e to claim them! §6§l<<<
+[23:33:23] [Render thread/INFO]: [System] [CHAT]   
+[23:33:24] [Render thread/INFO]: [System] [CHAT]  
+[23:33:24] [Render thread/INFO]: [System] [CHAT] §f              §7You have §3397,171 §7materials stashed away!
+[23:33:24] [Render thread/INFO]: [System] [CHAT] §f             §8(This totals 22 types of materials stashed!)
+[23:33:24] [Render thread/INFO]: [System] [CHAT] §f                §3§l>>> §3§lCLICK HERE§b to pick them up! §3§l<<<
+[23:33:24] [Render thread/INFO]: [System] [CHAT]   
+[23:33:25] [Render thread/INFO]: [System] [CHAT]  
+[23:33:25] [Render thread/INFO]: [System] [CHAT] §f                 §7You have §a3 §7unclaimed event rewards!
+[23:33:25] [Render thread/INFO]: [System] [CHAT] §f                     §6§l>>> §6§lCLICK HERE§e to claim! §6§l<<<
+[23:33:25] [Render thread/INFO]: [System] [CHAT]        Event rewards are deleted after 10 SkyBlock years!
+[23:33:25] [Render thread/INFO]: [System] [CHAT]   
+[23:33:25] [Render thread/INFO]: [System] [CHAT] §aYou are playing on profile: §ePapaya§b (Co-op)
+[23:33:25] [Render thread/INFO]: [System] [CHAT] Profile ID: 35d6d982-e7e1-4666-b3be-dd1ff4e637df
+[23:33:27] [Render thread/INFO]: [System] [CHAT] New day! Your Lottery buff changed!
+[23:33:27] [Render thread/INFO]: [System] [CHAT] New buff: Gain +50 Fig Fortune.
+[23:33:27] [Render thread/INFO]: [System] [CHAT] New day! Your Sky Mall buff changed!
+[23:33:27] [Render thread/INFO]: [System] [CHAT] New buff: Gain +100 Mining Speed.
+[23:33:27] [Render thread/INFO]: [System] [CHAT] You can disable this messaging by toggling Sky Mall in your /hotm!
+[23:33:28] [Render thread/INFO]: [System] [CHAT] §6You have §e15 §6unclaimed deliveries!\n§eClick here or talk to Jerry to claim them!
+[23:33:30] [Render thread/INFO]: [System] [CHAT] §aYou have 1743 hours and 41 minutes playtime!
+[23:33:37] [Render thread/INFO]: [STDOUT]: [Rareity] Preview item: Pitchin' Rod of the Sea
+[23:33:37] [Render thread/INFO]: [STDOUT]: [Rareity] Preview components: {minecraft:tooltip_display=>TooltipDisplay[hideTooltip=false, hiddenComponents={minecraft:jukebox_playable, minecraft:painting/variant, minecraft:map_id, minecraft:fireworks, minecraft:attribute_modifiers, minecraft:unbreakable, minecraft:written_book_content, minecraft:banner_patterns, minecraft:trim, minecraft:potion_contents, minecraft:dyed_color, minecraft:charged_projectiles}], minecraft:enchantment_glint_override=>true, minecraft:item_model=>hypixel_skyblock:item/fishing/rod/rod_of_the_sea, minecraft:unbreakable=>INSTANCE, minecraft:custom_name=>literal{Pitchin' Rod of the Sea}[style={color=gold,!italic}], minecraft:lore=>ItemLore[lines=[empty[style={!italic}, siblings=[literal{Damage: }[style={color=gray}], literal{+150}[style={color=red}]]], empty[style={!italic}, siblings=[literal{Strength: }[style={color=gray}], literal{+150}[style={color=red}]]], empty[style={!italic}, siblings=[literal{Fishing Speed: }[style={color=gray}], literal{+108 }[style={color=aqua}], literal{(+5) }[style={color=aqua}], literal{(+8) }[style={color=blue}], literal{(+8)}[style={color=light_purple}]]], empty[style={!italic}, siblings=[literal{Sea Creature Chance: }[style={color=gray}], literal{+23.4% }[style={color=dark_aqua}], literal{(+4%)}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Trophy Chance: }[style={color=gray}], literal{+5%}[style={color=gold}]]], empty[style={!italic}, siblings=[literal{Treasure Chance: }[style={color=gray}], literal{+3%}[style={color=gold}]]], empty[style={!italic}, siblings=[literal{Gemstones: }[style={color=gray}], literal{[}[style={color=dark_purple}], literal{}[style={color=dark_aqua}], literal{] }[style={color=dark_purple}], literal{[}[style={color=gold}], literal{}[style={color=dark_aqua}], literal{]}[style={color=gold}]]], empty, empty[style={!italic}, siblings=[literal{Flash I, }[style={color=light_purple,bold}], literal{Angler VI, }[style={color=blue}], literal{Blessing VI}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Caster VI, }[style={color=blue}], literal{Charm I, }[style={color=blue}], literal{Corruption V}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Expertise IX, }[style={color=blue}], literal{Frail VI, }[style={color=blue}], literal{Impaling III}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Looting IV, }[style={color=blue}], literal{Luck of the Sea VI, }[style={color=blue}], literal{Lure VI}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Magnet VI, }[style={color=blue}], literal{Piscary VII, }[style={color=blue}], literal{Quick Bite IV}[style={color=blue}]]], literal{Spiked Hook VII}[style={color=blue,!italic}], empty, empty[style={!italic}, siblings=[literal{ථ Hook }[style={color=blue}], literal{NONE}[style={color=dark_gray,bold}]]], empty, empty[style={!italic}, siblings=[literal{ꨃ }[style={color=blue}], literal{Trophy Line}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Grants }[style={color=gray}], literal{+5 Trophy Chance}[style={color=gold}], literal{.}[style={color=gray}]]], empty, empty[style={!italic}, siblings=[literal{࿉ }[style={color=blue}], literal{Lotus Sinker}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Materializes }[style={color=gray}], literal{Lotus }[style={color=green}], literal{in your inventory}[style={color=gray}]]], literal{whenever you catch something.}[style={color=gray,!italic}], empty, empty[style={!italic}, siblings=[literal{* }[style={color=dark_gray,bold}], literal{Co-op Soulbound }[style={color=dark_gray}], literal{*}[style={color=dark_gray,bold}]]], literal{LEGENDARY FISHING ROD}[style={color=gold,bold,!italic}]], styledLines=[empty[style={color=dark_purple,!italic}, siblings=[literal{Damage: }[style={color=gray}], literal{+150}[style={color=red}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Strength: }[style={color=gray}], literal{+150}[style={color=red}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Fishing Speed: }[style={color=gray}], literal{+108 }[style={color=aqua}], literal{(+5) }[style={color=aqua}], literal{(+8) }[style={color=blue}], literal{(+8)}[style={color=light_purple}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Sea Creature Chance: }[style={color=gray}], literal{+23.4% }[style={color=dark_aqua}], literal{(+4%)}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Trophy Chance: }[style={color=gray}], literal{+5%}[style={color=gold}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Treasure Chance: }[style={color=gray}], literal{+3%}[style={color=gold}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Gemstones: }[style={color=gray}], literal{[}[style={color=dark_purple}], literal{}[style={color=dark_aqua}], literal{] }[style={color=dark_purple}], literal{[}[style={color=gold}], literal{}[style={color=dark_aqua}], literal{]}[style={color=gold}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{Flash I, }[style={color=light_purple,bold}], literal{Angler VI, }[style={color=blue}], literal{Blessing VI}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Caster VI, }[style={color=blue}], literal{Charm I, }[style={color=blue}], literal{Corruption V}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Expertise IX, }[style={color=blue}], literal{Frail VI, }[style={color=blue}], literal{Impaling III}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Looting IV, }[style={color=blue}], literal{Luck of the Sea VI, }[style={color=blue}], literal{Lure VI}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Magnet VI, }[style={color=blue}], literal{Piscary VII, }[style={color=blue}], literal{Quick Bite IV}[style={color=blue}]]], literal{Spiked Hook VII}[style={color=blue,!italic}], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{ථ Hook }[style={color=blue}], literal{NONE}[style={color=dark_gray,bold}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{ꨃ }[style={color=blue}], literal{Trophy Line}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Grants }[style={color=gray}], literal{+5 Trophy Chance}[style={color=gold}], literal{.}[style={color=gray}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{࿉ }[style={color=blue}], literal{Lotus Sinker}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Materializes }[style={color=gray}], literal{Lotus }[style={color=green}], literal{in your inventory}[style={color=gray}]]], literal{whenever you catch something.}[style={color=gray,!italic}], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{* }[style={color=dark_gray,bold}], literal{Co-op Soulbound }[style={color=dark_gray}], literal{*}[style={color=dark_gray,bold}]]], literal{LEGENDARY FISHING ROD}[style={color=gold,bold,!italic}]]], minecraft:custom_data=>{donated_museum:1b,enchantments:{angler:6,blessing:6,caster:6,charm:1,corruption:5,expertise:9,frail:6,impaling:3,looting:4,luck_of_the_sea:6,lure:6,magnet:6,piscary:7,quick_bite:4,spiked_hook:7,ultimate_flash:1},expertise_kills:13005,gems:{AQUAMARINE_0:"FLAWLESS",AQUAMARINE_1:"PERFECT",unlocked_slots:["AQUAMARINE_0","AQUAMARINE_1"]},id:"ROD_OF_THE_SEA",line:{part:"trophy_line",uuid:"641413b1-c584-498e-a564-0c18426e1cde"},modifier:"pitchin",sinker:{donated_museum:1b,part:"lotus_sinker",uuid:"7e330d14-997d-4411-ba24-8cb9cf1d35e6"},timestamp:1717646619383L,uuid:"e39eccfb-803c-4989-bb19-b6654ab1583e",wet_book_count:5}, minecraft:tooltip_style=>hypixel_skyblock:legendary, minecraft:item_name=>translation{key='item.minecraft.fishing_rod', args=[]}, minecraft:repair_cost=>0, minecraft:attribute_modifiers=>ItemAttributeModifiers[modifiers=[]], minecraft:max_damage=>64, minecraft:enchantments=>ItemEnchantments{enchantments={}}, minecraft:enchantable=>Enchantable[value=1], minecraft:break_sound=>Reference{ResourceKey[minecraft:sound_event / minecraft:entity.item.break]=SoundEvent[location=minecraft:entity.item.break, fixedRange=Optional.empty]}, minecraft:use_effects=>UseEffects[canSprint=false, interactVibrations=true, speedMultiplier=0.2], minecraft:max_stack_size=>1, minecraft:swing_animation=>SwingAnimation[type=WHACK, duration=6], minecraft:rarity=>COMMON, minecraft:damage=>0}
+[23:33:41] [Render thread/INFO]: [System] [CHAT] Hoppity's Hunt has begun! Help Hoppity find his Chocolate Rabbit Eggs across SkyBlock each day during the Spring!
+[23:33:46] [Render thread/INFO]: [STDOUT]: [Rareity] Preview item: Pitchin' Rod of the Sea
+[23:33:46] [Render thread/INFO]: [STDOUT]: [Rareity] Preview components: {minecraft:tooltip_display=>TooltipDisplay[hideTooltip=false, hiddenComponents={minecraft:jukebox_playable, minecraft:painting/variant, minecraft:map_id, minecraft:fireworks, minecraft:attribute_modifiers, minecraft:unbreakable, minecraft:written_book_content, minecraft:banner_patterns, minecraft:trim, minecraft:potion_contents, minecraft:dyed_color, minecraft:charged_projectiles}], minecraft:enchantment_glint_override=>true, minecraft:item_model=>hypixel_skyblock:item/fishing/rod/rod_of_the_sea, minecraft:unbreakable=>INSTANCE, minecraft:custom_name=>literal{Pitchin' Rod of the Sea}[style={color=gold,!italic}], minecraft:lore=>ItemLore[lines=[empty[style={!italic}, siblings=[literal{Damage: }[style={color=gray}], literal{+150}[style={color=red}]]], empty[style={!italic}, siblings=[literal{Strength: }[style={color=gray}], literal{+150}[style={color=red}]]], empty[style={!italic}, siblings=[literal{Fishing Speed: }[style={color=gray}], literal{+108 }[style={color=aqua}], literal{(+5) }[style={color=aqua}], literal{(+8) }[style={color=blue}], literal{(+8)}[style={color=light_purple}]]], empty[style={!italic}, siblings=[literal{Sea Creature Chance: }[style={color=gray}], literal{+23.4% }[style={color=dark_aqua}], literal{(+4%)}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Trophy Chance: }[style={color=gray}], literal{+5%}[style={color=gold}]]], empty[style={!italic}, siblings=[literal{Treasure Chance: }[style={color=gray}], literal{+3%}[style={color=gold}]]], empty[style={!italic}, siblings=[literal{Gemstones: }[style={color=gray}], literal{[}[style={color=dark_purple}], literal{}[style={color=dark_aqua}], literal{] }[style={color=dark_purple}], literal{[}[style={color=gold}], literal{}[style={color=dark_aqua}], literal{]}[style={color=gold}]]], empty, empty[style={!italic}, siblings=[literal{Flash I, }[style={color=light_purple,bold}], literal{Angler VI, }[style={color=blue}], literal{Blessing VI}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Caster VI, }[style={color=blue}], literal{Charm I, }[style={color=blue}], literal{Corruption V}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Expertise IX, }[style={color=blue}], literal{Frail VI, }[style={color=blue}], literal{Impaling III}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Looting IV, }[style={color=blue}], literal{Luck of the Sea VI, }[style={color=blue}], literal{Lure VI}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Magnet VI, }[style={color=blue}], literal{Piscary VII, }[style={color=blue}], literal{Quick Bite IV}[style={color=blue}]]], literal{Spiked Hook VII}[style={color=blue,!italic}], empty, empty[style={!italic}, siblings=[literal{ථ Hook }[style={color=blue}], literal{NONE}[style={color=dark_gray,bold}]]], empty, empty[style={!italic}, siblings=[literal{ꨃ }[style={color=blue}], literal{Trophy Line}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Grants }[style={color=gray}], literal{+5 Trophy Chance}[style={color=gold}], literal{.}[style={color=gray}]]], empty, empty[style={!italic}, siblings=[literal{࿉ }[style={color=blue}], literal{Lotus Sinker}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Materializes }[style={color=gray}], literal{Lotus }[style={color=green}], literal{in your inventory}[style={color=gray}]]], literal{whenever you catch something.}[style={color=gray,!italic}], empty, empty[style={!italic}, siblings=[literal{* }[style={color=dark_gray,bold}], literal{Co-op Soulbound }[style={color=dark_gray}], literal{*}[style={color=dark_gray,bold}]]], literal{LEGENDARY FISHING ROD}[style={color=gold,bold,!italic}]], styledLines=[empty[style={color=dark_purple,!italic}, siblings=[literal{Damage: }[style={color=gray}], literal{+150}[style={color=red}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Strength: }[style={color=gray}], literal{+150}[style={color=red}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Fishing Speed: }[style={color=gray}], literal{+108 }[style={color=aqua}], literal{(+5) }[style={color=aqua}], literal{(+8) }[style={color=blue}], literal{(+8)}[style={color=light_purple}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Sea Creature Chance: }[style={color=gray}], literal{+23.4% }[style={color=dark_aqua}], literal{(+4%)}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Trophy Chance: }[style={color=gray}], literal{+5%}[style={color=gold}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Treasure Chance: }[style={color=gray}], literal{+3%}[style={color=gold}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Gemstones: }[style={color=gray}], literal{[}[style={color=dark_purple}], literal{}[style={color=dark_aqua}], literal{] }[style={color=dark_purple}], literal{[}[style={color=gold}], literal{}[style={color=dark_aqua}], literal{]}[style={color=gold}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{Flash I, }[style={color=light_purple,bold}], literal{Angler VI, }[style={color=blue}], literal{Blessing VI}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Caster VI, }[style={color=blue}], literal{Charm I, }[style={color=blue}], literal{Corruption V}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Expertise IX, }[style={color=blue}], literal{Frail VI, }[style={color=blue}], literal{Impaling III}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Looting IV, }[style={color=blue}], literal{Luck of the Sea VI, }[style={color=blue}], literal{Lure VI}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Magnet VI, }[style={color=blue}], literal{Piscary VII, }[style={color=blue}], literal{Quick Bite IV}[style={color=blue}]]], literal{Spiked Hook VII}[style={color=blue,!italic}], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{ථ Hook }[style={color=blue}], literal{NONE}[style={color=dark_gray,bold}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{ꨃ }[style={color=blue}], literal{Trophy Line}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Grants }[style={color=gray}], literal{+5 Trophy Chance}[style={color=gold}], literal{.}[style={color=gray}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{࿉ }[style={color=blue}], literal{Lotus Sinker}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Materializes }[style={color=gray}], literal{Lotus }[style={color=green}], literal{in your inventory}[style={color=gray}]]], literal{whenever you catch something.}[style={color=gray,!italic}], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{* }[style={color=dark_gray,bold}], literal{Co-op Soulbound }[style={color=dark_gray}], literal{*}[style={color=dark_gray,bold}]]], literal{LEGENDARY FISHING ROD}[style={color=gold,bold,!italic}]]], minecraft:custom_data=>{donated_museum:1b,enchantments:{angler:6,blessing:6,caster:6,charm:1,corruption:5,expertise:9,frail:6,impaling:3,looting:4,luck_of_the_sea:6,lure:6,magnet:6,piscary:7,quick_bite:4,spiked_hook:7,ultimate_flash:1},expertise_kills:13005,gems:{AQUAMARINE_0:"FLAWLESS",AQUAMARINE_1:"PERFECT",unlocked_slots:["AQUAMARINE_0","AQUAMARINE_1"]},id:"ROD_OF_THE_SEA",line:{part:"trophy_line",uuid:"641413b1-c584-498e-a564-0c18426e1cde"},modifier:"pitchin",sinker:{donated_museum:1b,part:"lotus_sinker",uuid:"7e330d14-997d-4411-ba24-8cb9cf1d35e6"},timestamp:1717646619383L,uuid:"e39eccfb-803c-4989-bb19-b6654ab1583e",wet_book_count:5}, minecraft:tooltip_style=>hypixel_skyblock:legendary, minecraft:item_name=>translation{key='item.minecraft.fishing_rod', args=[]}, minecraft:repair_cost=>0, minecraft:attribute_modifiers=>ItemAttributeModifiers[modifiers=[]], minecraft:max_damage=>64, minecraft:enchantments=>ItemEnchantments{enchantments={}}, minecraft:enchantable=>Enchantable[value=1], minecraft:break_sound=>Reference{ResourceKey[minecraft:sound_event / minecraft:entity.item.break]=SoundEvent[location=minecraft:entity.item.break, fixedRange=Optional.empty]}, minecraft:use_effects=>UseEffects[canSprint=false, interactVibrations=true, speedMultiplier=0.2], minecraft:max_stack_size=>1, minecraft:swing_animation=>SwingAnimation[type=WHACK, duration=6], minecraft:rarity=>COMMON, minecraft:damage=>0}
+[23:33:50] [Render thread/INFO]: [STDOUT]: [Rareity] Preview item: Pitchin' Rod of the Sea
+[23:33:50] [Render thread/INFO]: [STDOUT]: [Rareity] Preview components: {minecraft:tooltip_display=>TooltipDisplay[hideTooltip=false, hiddenComponents={minecraft:jukebox_playable, minecraft:painting/variant, minecraft:map_id, minecraft:fireworks, minecraft:attribute_modifiers, minecraft:unbreakable, minecraft:written_book_content, minecraft:banner_patterns, minecraft:trim, minecraft:potion_contents, minecraft:dyed_color, minecraft:charged_projectiles}], minecraft:enchantment_glint_override=>true, minecraft:item_model=>hypixel_skyblock:item/fishing/rod/rod_of_the_sea, minecraft:unbreakable=>INSTANCE, minecraft:custom_name=>literal{Pitchin' Rod of the Sea}[style={color=gold,!italic}], minecraft:lore=>ItemLore[lines=[empty[style={!italic}, siblings=[literal{Damage: }[style={color=gray}], literal{+150}[style={color=red}]]], empty[style={!italic}, siblings=[literal{Strength: }[style={color=gray}], literal{+150}[style={color=red}]]], empty[style={!italic}, siblings=[literal{Fishing Speed: }[style={color=gray}], literal{+108 }[style={color=aqua}], literal{(+5) }[style={color=aqua}], literal{(+8) }[style={color=blue}], literal{(+8)}[style={color=light_purple}]]], empty[style={!italic}, siblings=[literal{Sea Creature Chance: }[style={color=gray}], literal{+23.4% }[style={color=dark_aqua}], literal{(+4%)}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Trophy Chance: }[style={color=gray}], literal{+5%}[style={color=gold}]]], empty[style={!italic}, siblings=[literal{Treasure Chance: }[style={color=gray}], literal{+3%}[style={color=gold}]]], empty[style={!italic}, siblings=[literal{Gemstones: }[style={color=gray}], literal{[}[style={color=dark_purple}], literal{}[style={color=dark_aqua}], literal{] }[style={color=dark_purple}], literal{[}[style={color=gold}], literal{}[style={color=dark_aqua}], literal{]}[style={color=gold}]]], empty, empty[style={!italic}, siblings=[literal{Flash I, }[style={color=light_purple,bold}], literal{Angler VI, }[style={color=blue}], literal{Blessing VI}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Caster VI, }[style={color=blue}], literal{Charm I, }[style={color=blue}], literal{Corruption V}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Expertise IX, }[style={color=blue}], literal{Frail VI, }[style={color=blue}], literal{Impaling III}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Looting IV, }[style={color=blue}], literal{Luck of the Sea VI, }[style={color=blue}], literal{Lure VI}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Magnet VI, }[style={color=blue}], literal{Piscary VII, }[style={color=blue}], literal{Quick Bite IV}[style={color=blue}]]], literal{Spiked Hook VII}[style={color=blue,!italic}], empty, empty[style={!italic}, siblings=[literal{ථ Hook }[style={color=blue}], literal{NONE}[style={color=dark_gray,bold}]]], empty, empty[style={!italic}, siblings=[literal{ꨃ }[style={color=blue}], literal{Trophy Line}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Grants }[style={color=gray}], literal{+5 Trophy Chance}[style={color=gold}], literal{.}[style={color=gray}]]], empty, empty[style={!italic}, siblings=[literal{࿉ }[style={color=blue}], literal{Lotus Sinker}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Materializes }[style={color=gray}], literal{Lotus }[style={color=green}], literal{in your inventory}[style={color=gray}]]], literal{whenever you catch something.}[style={color=gray,!italic}], empty, empty[style={!italic}, siblings=[literal{* }[style={color=dark_gray,bold}], literal{Co-op Soulbound }[style={color=dark_gray}], literal{*}[style={color=dark_gray,bold}]]], literal{LEGENDARY FISHING ROD}[style={color=gold,bold,!italic}]], styledLines=[empty[style={color=dark_purple,!italic}, siblings=[literal{Damage: }[style={color=gray}], literal{+150}[style={color=red}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Strength: }[style={color=gray}], literal{+150}[style={color=red}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Fishing Speed: }[style={color=gray}], literal{+108 }[style={color=aqua}], literal{(+5) }[style={color=aqua}], literal{(+8) }[style={color=blue}], literal{(+8)}[style={color=light_purple}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Sea Creature Chance: }[style={color=gray}], literal{+23.4% }[style={color=dark_aqua}], literal{(+4%)}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Trophy Chance: }[style={color=gray}], literal{+5%}[style={color=gold}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Treasure Chance: }[style={color=gray}], literal{+3%}[style={color=gold}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Gemstones: }[style={color=gray}], literal{[}[style={color=dark_purple}], literal{}[style={color=dark_aqua}], literal{] }[style={color=dark_purple}], literal{[}[style={color=gold}], literal{}[style={color=dark_aqua}], literal{]}[style={color=gold}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{Flash I, }[style={color=light_purple,bold}], literal{Angler VI, }[style={color=blue}], literal{Blessing VI}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Caster VI, }[style={color=blue}], literal{Charm I, }[style={color=blue}], literal{Corruption V}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Expertise IX, }[style={color=blue}], literal{Frail VI, }[style={color=blue}], literal{Impaling III}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Looting IV, }[style={color=blue}], literal{Luck of the Sea VI, }[style={color=blue}], literal{Lure VI}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Magnet VI, }[style={color=blue}], literal{Piscary VII, }[style={color=blue}], literal{Quick Bite IV}[style={color=blue}]]], literal{Spiked Hook VII}[style={color=blue,!italic}], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{ථ Hook }[style={color=blue}], literal{NONE}[style={color=dark_gray,bold}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{ꨃ }[style={color=blue}], literal{Trophy Line}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Grants }[style={color=gray}], literal{+5 Trophy Chance}[style={color=gold}], literal{.}[style={color=gray}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{࿉ }[style={color=blue}], literal{Lotus Sinker}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Materializes }[style={color=gray}], literal{Lotus }[style={color=green}], literal{in your inventory}[style={color=gray}]]], literal{whenever you catch something.}[style={color=gray,!italic}], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{* }[style={color=dark_gray,bold}], literal{Co-op Soulbound }[style={color=dark_gray}], literal{*}[style={color=dark_gray,bold}]]], literal{LEGENDARY FISHING ROD}[style={color=gold,bold,!italic}]]], minecraft:custom_data=>{donated_museum:1b,enchantments:{angler:6,blessing:6,caster:6,charm:1,corruption:5,expertise:9,frail:6,impaling:3,looting:4,luck_of_the_sea:6,lure:6,magnet:6,piscary:7,quick_bite:4,spiked_hook:7,ultimate_flash:1},expertise_kills:13005,gems:{AQUAMARINE_0:"FLAWLESS",AQUAMARINE_1:"PERFECT",unlocked_slots:["AQUAMARINE_0","AQUAMARINE_1"]},id:"ROD_OF_THE_SEA",line:{part:"trophy_line",uuid:"641413b1-c584-498e-a564-0c18426e1cde"},modifier:"pitchin",sinker:{donated_museum:1b,part:"lotus_sinker",uuid:"7e330d14-997d-4411-ba24-8cb9cf1d35e6"},timestamp:1717646619383L,uuid:"e39eccfb-803c-4989-bb19-b6654ab1583e",wet_book_count:5}, minecraft:tooltip_style=>hypixel_skyblock:legendary, minecraft:item_name=>translation{key='item.minecraft.fishing_rod', args=[]}, minecraft:repair_cost=>0, minecraft:attribute_modifiers=>ItemAttributeModifiers[modifiers=[]], minecraft:max_damage=>64, minecraft:enchantments=>ItemEnchantments{enchantments={}}, minecraft:enchantable=>Enchantable[value=1], minecraft:break_sound=>Reference{ResourceKey[minecraft:sound_event / minecraft:entity.item.break]=SoundEvent[location=minecraft:entity.item.break, fixedRange=Optional.empty]}, minecraft:use_effects=>UseEffects[canSprint=false, interactVibrations=true, speedMultiplier=0.2], minecraft:max_stack_size=>1, minecraft:swing_animation=>SwingAnimation[type=WHACK, duration=6], minecraft:rarity=>COMMON, minecraft:damage=>0}
+[23:34:25] [Render thread/INFO]: [System] [CHAT]  
+[23:34:25] [Render thread/INFO]: [System] [CHAT] §f              §7You have §3397,171 §7materials stashed away!
+[23:34:25] [Render thread/INFO]: [System] [CHAT] §f             §8(This totals 22 types of materials stashed!)
+[23:34:25] [Render thread/INFO]: [System] [CHAT] §f                §3§l>>> §3§lCLICK HERE§b to pick them up! §3§l<<<
+[23:34:25] [Render thread/INFO]: [System] [CHAT]   
+[23:34:28] [Render thread/INFO]: [STDOUT]: [Rareity] Preview item: Pitchin' Inferno Rod ✪✪✪✪✪
+[23:34:28] [Render thread/INFO]: [STDOUT]: [Rareity] Preview components: {minecraft:tooltip_display=>TooltipDisplay[hideTooltip=false, hiddenComponents={minecraft:jukebox_playable, minecraft:painting/variant, minecraft:map_id, minecraft:fireworks, minecraft:attribute_modifiers, minecraft:unbreakable, minecraft:written_book_content, minecraft:banner_patterns, minecraft:trim, minecraft:potion_contents, minecraft:dyed_color, minecraft:charged_projectiles}], minecraft:enchantment_glint_override=>true, minecraft:item_model=>hypixel_skyblock:item/fishing/rod/inferno_rod, minecraft:unbreakable=>INSTANCE, minecraft:custom_name=>empty[style={!italic}, siblings=[literal{Pitchin' Inferno Rod }[style={color=dark_purple}], literal{✪✪}[style={color=light_purple}], literal{✪✪✪}[style={color=gold}]]], minecraft:lore=>ItemLore[lines=[literal{Lava Rod}[style={color=dark_gray,!italic}], empty, empty[style={!italic}, siblings=[literal{Damage: }[style={color=gray}], literal{+228}[style={color=red}]]], empty[style={!italic}, siblings=[literal{Strength: }[style={color=gray}], literal{+228}[style={color=red}]]], empty[style={!italic}, siblings=[literal{Fishing Speed: }[style={color=gray}], literal{+86 }[style={color=aqua}], literal{(+5) }[style={color=aqua}], literal{(+6) }[style={color=blue}], literal{(+3)}[style={color=light_purple}]]], empty[style={!italic}, siblings=[literal{Sea Creature Chance: }[style={color=gray}], literal{+24.6% }[style={color=dark_aqua}], literal{(+3%)}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Trophy Chance: }[style={color=gray}], literal{+22.8%}[style={color=gold}]]], empty[style={!italic}, siblings=[literal{Treasure Chance: }[style={color=gray}], literal{+3%}[style={color=gold}]]], empty[style={!italic}, siblings=[literal{Gemstones: }[style={color=gray}], literal{[}[style={color=dark_purple}], literal{}[style={color=dark_aqua}], literal{]}[style={color=dark_purple}]]], empty, empty[style={!italic}, siblings=[literal{Flash II, }[style={color=light_purple,bold}], literal{Angler VI, }[style={color=blue}], literal{Blessing V}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Caster VI, }[style={color=blue}], literal{Charm V, }[style={color=blue}], literal{Corruption V}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Expertise VII, }[style={color=blue}], literal{Frail VI, }[style={color=blue}], literal{Impaling V}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Looting III, }[style={color=blue}], literal{Luck of the Sea VI, }[style={color=blue}], literal{Lure VI}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Magnet VI, }[style={color=blue}], literal{Piscary V, }[style={color=blue}], literal{Quick Bite II}[style={color=blue}]]], literal{Spiked Hook V}[style={color=blue,!italic}], empty, empty[style={!italic}, siblings=[literal{ථ Hook }[style={color=blue}], literal{NONE}[style={color=dark_gray,bold}]]], empty, empty[style={!italic}, siblings=[literal{ꨃ }[style={color=blue}], literal{Speedy Line}[style={color=green}]]], empty[style={!italic}, siblings=[literal{Grants }[style={color=gray}], literal{+10 Fishing Speed}[style={color=aqua}], literal{.}[style={color=gray}]]], empty, empty[style={!italic}, siblings=[literal{࿉ }[style={color=blue}], literal{Prismarine Sinker}[style={color=white}]]], empty[style={!italic}, siblings=[literal{Materializes }[style={color=gray}], literal{Prismarine Shard}[style={color=white}], literal{ or}[style={color=gray}]]], empty[style={!italic}, siblings=[literal{Prismarine Crystals }[style={color=white}], literal{in your}[style={color=gray}]]], literal{inventory whenever you catch}[style={color=gray,!italic}], literal{something.}[style={color=gray,!italic}], empty, empty[style={!italic}, siblings=[literal{* }[style={color=dark_gray,bold}], literal{Co-op Soulbound }[style={color=dark_gray}], literal{*}[style={color=dark_gray,bold}]]], literal{EPIC FISHING ROD}[style={color=dark_purple,bold,!italic}]], styledLines=[literal{Lava Rod}[style={color=dark_gray,!italic}], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{Damage: }[style={color=gray}], literal{+228}[style={color=red}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Strength: }[style={color=gray}], literal{+228}[style={color=red}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Fishing Speed: }[style={color=gray}], literal{+86 }[style={color=aqua}], literal{(+5) }[style={color=aqua}], literal{(+6) }[style={color=blue}], literal{(+3)}[style={color=light_purple}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Sea Creature Chance: }[style={color=gray}], literal{+24.6% }[style={color=dark_aqua}], literal{(+3%)}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Trophy Chance: }[style={color=gray}], literal{+22.8%}[style={color=gold}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Treasure Chance: }[style={color=gray}], literal{+3%}[style={color=gold}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Gemstones: }[style={color=gray}], literal{[}[style={color=dark_purple}], literal{}[style={color=dark_aqua}], literal{]}[style={color=dark_purple}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{Flash II, }[style={color=light_purple,bold}], literal{Angler VI, }[style={color=blue}], literal{Blessing V}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Caster VI, }[style={color=blue}], literal{Charm V, }[style={color=blue}], literal{Corruption V}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Expertise VII, }[style={color=blue}], literal{Frail VI, }[style={color=blue}], literal{Impaling V}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Looting III, }[style={color=blue}], literal{Luck of the Sea VI, }[style={color=blue}], literal{Lure VI}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Magnet VI, }[style={color=blue}], literal{Piscary V, }[style={color=blue}], literal{Quick Bite II}[style={color=blue}]]], literal{Spiked Hook V}[style={color=blue,!italic}], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{ථ Hook }[style={color=blue}], literal{NONE}[style={color=dark_gray,bold}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{ꨃ }[style={color=blue}], literal{Speedy Line}[style={color=green}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Grants }[style={color=gray}], literal{+10 Fishing Speed}[style={color=aqua}], literal{.}[style={color=gray}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{࿉ }[style={color=blue}], literal{Prismarine Sinker}[style={color=white}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Materializes }[style={color=gray}], literal{Prismarine Shard}[style={color=white}], literal{ or}[style={color=gray}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Prismarine Crystals }[style={color=white}], literal{in your}[style={color=gray}]]], literal{inventory whenever you catch}[style={color=gray,!italic}], literal{something.}[style={color=gray,!italic}], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{* }[style={color=dark_gray,bold}], literal{Co-op Soulbound }[style={color=dark_gray}], literal{*}[style={color=dark_gray,bold}]]], literal{EPIC FISHING ROD}[style={color=dark_purple,bold,!italic}]]], minecraft:custom_data=>{enchantments:{angler:6,blessing:5,caster:6,charm:5,corruption:5,expertise:7,frail:6,impaling:5,looting:3,luck_of_the_sea:6,lure:6,magnet:6,piscary:5,quick_bite:2,spiked_hook:5,ultimate_flash:2},expertise_kills:4444,gems:{AQUAMARINE_0:"FLAWLESS",unlocked_slots:["AQUAMARINE_0"]},id:"INFERNO_ROD",lava_creatures_killed:["MAGMA_SLUG","MOOGMA","PYROCLASTIC_WORM","LAVA_LEECH","THUNDER","LAVA_FLAME","FIERY_SCUTTLER","PIG_RIDER","FRIED_CHICKEN","FIRE_EEL","FIREPROOF_WITCH","STRIDER","LORD_JAWBUS"],line:{donated_museum:1b,part:"speedy_line",uuid:"d37945f0-c17b-47bb-9ac1-514f3e7efde1"},modifier:"pitchin",sinker:{donated_museum:1b,part:"prismarine_sinker",uuid:"b1a24fbd-2ce1-48a4-80f6-1594a3b804d4"},timestamp:1745607810705L,upgrade_level:7,uuid:"74de2b23-beb7-4a4b-b613-5cb67ae78e4c",wet_book_count:5}, minecraft:tooltip_style=>hypixel_skyblock:epic, minecraft:item_name=>translation{key='item.minecraft.fishing_rod', args=[]}, minecraft:repair_cost=>0, minecraft:attribute_modifiers=>ItemAttributeModifiers[modifiers=[]], minecraft:max_damage=>64, minecraft:enchantments=>ItemEnchantments{enchantments={}}, minecraft:enchantable=>Enchantable[value=1], minecraft:break_sound=>Reference{ResourceKey[minecraft:sound_event / minecraft:entity.item.break]=SoundEvent[location=minecraft:entity.item.break, fixedRange=Optional.empty]}, minecraft:use_effects=>UseEffects[canSprint=false, interactVibrations=true, speedMultiplier=0.2], minecraft:max_stack_size=>1, minecraft:swing_animation=>SwingAnimation[type=WHACK, duration=6], minecraft:rarity=>COMMON, minecraft:damage=>0}
+[23:34:36] [Render thread/INFO]: [STDOUT]: [Rareity] Preview item: Pitchin' Inferno Rod ✪✪✪✪✪
+[23:34:36] [Render thread/INFO]: [STDOUT]: [Rareity] Preview components: {minecraft:tooltip_display=>TooltipDisplay[hideTooltip=false, hiddenComponents={minecraft:jukebox_playable, minecraft:painting/variant, minecraft:map_id, minecraft:fireworks, minecraft:attribute_modifiers, minecraft:unbreakable, minecraft:written_book_content, minecraft:banner_patterns, minecraft:trim, minecraft:potion_contents, minecraft:dyed_color, minecraft:charged_projectiles}], minecraft:enchantment_glint_override=>true, minecraft:item_model=>hypixel_skyblock:item/fishing/rod/inferno_rod, minecraft:unbreakable=>INSTANCE, minecraft:custom_name=>empty[style={!italic}, siblings=[literal{Pitchin' Inferno Rod }[style={color=dark_purple}], literal{✪✪}[style={color=light_purple}], literal{✪✪✪}[style={color=gold}]]], minecraft:lore=>ItemLore[lines=[literal{Lava Rod}[style={color=dark_gray,!italic}], empty, empty[style={!italic}, siblings=[literal{Damage: }[style={color=gray}], literal{+228}[style={color=red}]]], empty[style={!italic}, siblings=[literal{Strength: }[style={color=gray}], literal{+228}[style={color=red}]]], empty[style={!italic}, siblings=[literal{Fishing Speed: }[style={color=gray}], literal{+86 }[style={color=aqua}], literal{(+5) }[style={color=aqua}], literal{(+6) }[style={color=blue}], literal{(+3)}[style={color=light_purple}]]], empty[style={!italic}, siblings=[literal{Sea Creature Chance: }[style={color=gray}], literal{+24.6% }[style={color=dark_aqua}], literal{(+3%)}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Trophy Chance: }[style={color=gray}], literal{+22.8%}[style={color=gold}]]], empty[style={!italic}, siblings=[literal{Treasure Chance: }[style={color=gray}], literal{+3%}[style={color=gold}]]], empty[style={!italic}, siblings=[literal{Gemstones: }[style={color=gray}], literal{[}[style={color=dark_purple}], literal{}[style={color=dark_aqua}], literal{]}[style={color=dark_purple}]]], empty, empty[style={!italic}, siblings=[literal{Flash II, }[style={color=light_purple,bold}], literal{Angler VI, }[style={color=blue}], literal{Blessing V}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Caster VI, }[style={color=blue}], literal{Charm V, }[style={color=blue}], literal{Corruption V}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Expertise VII, }[style={color=blue}], literal{Frail VI, }[style={color=blue}], literal{Impaling V}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Looting III, }[style={color=blue}], literal{Luck of the Sea VI, }[style={color=blue}], literal{Lure VI}[style={color=blue}]]], empty[style={!italic}, siblings=[literal{Magnet VI, }[style={color=blue}], literal{Piscary V, }[style={color=blue}], literal{Quick Bite II}[style={color=blue}]]], literal{Spiked Hook V}[style={color=blue,!italic}], empty, empty[style={!italic}, siblings=[literal{ථ Hook }[style={color=blue}], literal{NONE}[style={color=dark_gray,bold}]]], empty, empty[style={!italic}, siblings=[literal{ꨃ }[style={color=blue}], literal{Speedy Line}[style={color=green}]]], empty[style={!italic}, siblings=[literal{Grants }[style={color=gray}], literal{+10 Fishing Speed}[style={color=aqua}], literal{.}[style={color=gray}]]], empty, empty[style={!italic}, siblings=[literal{࿉ }[style={color=blue}], literal{Prismarine Sinker}[style={color=white}]]], empty[style={!italic}, siblings=[literal{Materializes }[style={color=gray}], literal{Prismarine Shard}[style={color=white}], literal{ or}[style={color=gray}]]], empty[style={!italic}, siblings=[literal{Prismarine Crystals }[style={color=white}], literal{in your}[style={color=gray}]]], literal{inventory whenever you catch}[style={color=gray,!italic}], literal{something.}[style={color=gray,!italic}], empty, empty[style={!italic}, siblings=[literal{* }[style={color=dark_gray,bold}], literal{Co-op Soulbound }[style={color=dark_gray}], literal{*}[style={color=dark_gray,bold}]]], literal{EPIC FISHING ROD}[style={color=dark_purple,bold,!italic}]], styledLines=[literal{Lava Rod}[style={color=dark_gray,!italic}], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{Damage: }[style={color=gray}], literal{+228}[style={color=red}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Strength: }[style={color=gray}], literal{+228}[style={color=red}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Fishing Speed: }[style={color=gray}], literal{+86 }[style={color=aqua}], literal{(+5) }[style={color=aqua}], literal{(+6) }[style={color=blue}], literal{(+3)}[style={color=light_purple}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Sea Creature Chance: }[style={color=gray}], literal{+24.6% }[style={color=dark_aqua}], literal{(+3%)}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Trophy Chance: }[style={color=gray}], literal{+22.8%}[style={color=gold}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Treasure Chance: }[style={color=gray}], literal{+3%}[style={color=gold}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Gemstones: }[style={color=gray}], literal{[}[style={color=dark_purple}], literal{}[style={color=dark_aqua}], literal{]}[style={color=dark_purple}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{Flash II, }[style={color=light_purple,bold}], literal{Angler VI, }[style={color=blue}], literal{Blessing V}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Caster VI, }[style={color=blue}], literal{Charm V, }[style={color=blue}], literal{Corruption V}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Expertise VII, }[style={color=blue}], literal{Frail VI, }[style={color=blue}], literal{Impaling V}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Looting III, }[style={color=blue}], literal{Luck of the Sea VI, }[style={color=blue}], literal{Lure VI}[style={color=blue}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Magnet VI, }[style={color=blue}], literal{Piscary V, }[style={color=blue}], literal{Quick Bite II}[style={color=blue}]]], literal{Spiked Hook V}[style={color=blue,!italic}], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{ථ Hook }[style={color=blue}], literal{NONE}[style={color=dark_gray,bold}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{ꨃ }[style={color=blue}], literal{Speedy Line}[style={color=green}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Grants }[style={color=gray}], literal{+10 Fishing Speed}[style={color=aqua}], literal{.}[style={color=gray}]]], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{࿉ }[style={color=blue}], literal{Prismarine Sinker}[style={color=white}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Materializes }[style={color=gray}], literal{Prismarine Shard}[style={color=white}], literal{ or}[style={color=gray}]]], empty[style={color=dark_purple,!italic}, siblings=[literal{Prismarine Crystals }[style={color=white}], literal{in your}[style={color=gray}]]], literal{inventory whenever you catch}[style={color=gray,!italic}], literal{something.}[style={color=gray,!italic}], empty[style={color=dark_purple,italic}], empty[style={color=dark_purple,!italic}, siblings=[literal{* }[style={color=dark_gray,bold}], literal{Co-op Soulbound }[style={color=dark_gray}], literal{*}[style={color=dark_gray,bold}]]], literal{EPIC FISHING ROD}[style={color=dark_purple,bold,!italic}]]], minecraft:custom_data=>{enchantments:{angler:6,blessing:5,caster:6,charm:5,corruption:5,expertise:7,frail:6,impaling:5,looting:3,luck_of_the_sea:6,lure:6,magnet:6,piscary:5,quick_bite:2,spiked_hook:5,ultimate_flash:2},expertise_kills:4444,gems:{AQUAMARINE_0:"FLAWLESS",unlocked_slots:["AQUAMARINE_0"]},id:"INFERNO_ROD",lava_creatures_killed:["MAGMA_SLUG","MOOGMA","PYROCLASTIC_WORM","LAVA_LEECH","THUNDER","LAVA_FLAME","FIERY_SCUTTLER","PIG_RIDER","FRIED_CHICKEN","FIRE_EEL","FIREPROOF_WITCH","STRIDER","LORD_JAWBUS"],line:{donated_museum:1b,part:"speedy_line",uuid:"d37945f0-c17b-47bb-9ac1-514f3e7efde1"},modifier:"pitchin",sinker:{donated_museum:1b,part:"prismarine_sinker",uuid:"b1a24fbd-2ce1-48a4-80f6-1594a3b804d4"},timestamp:1745607810705L,upgrade_level:7,uuid:"74de2b23-beb7-4a4b-b613-5cb67ae78e4c",wet_book_count:5}, minecraft:tooltip_style=>hypixel_skyblock:epic, minecraft:item_name=>translation{key='item.minecraft.fishing_rod', args=[]}, minecraft:repair_cost=>0, minecraft:attribute_modifiers=>ItemAttributeModifiers[modifiers=[]], minecraft:max_damage=>64, minecraft:enchantments=>ItemEnchantments{enchantments={}}, minecraft:enchantable=>Enchantable[value=1], minecraft:break_sound=>Reference{ResourceKey[minecraft:sound_event / minecraft:entity.item.break]=SoundEvent[location=minecraft:entity.item.break, fixedRange=Optional.empty]}, minecraft:use_effects=>UseEffects[canSprint=false, interactVibrations=true, speedMultiplier=0.2], minecraft:max_stack_size=>1, minecraft:swing_animation=>SwingAnimation[type=WHACK, duration=6], minecraft:rarity=>COMMON, minecraft:damage=>0}
+[23:34:52] [Render thread/WARN]: Requested creation of existing team 'fkt_Scion '
+[23:34:52] [Worker-Main-15/ERROR]: Malformed signature encoding on property Property[name=textures, value=ewogICJ0aW1lc3RhbXAiIDogMTY4MDQ3ODUzNDE0MCwKICAicHJvZmlsZUlkIiA6ICIwOGQ4Nzg3ZDFiYzY0MWE2YWNlNzdjMzliNzVmODZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYWdpa2xvb24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNmODNiYmFhMTA5YWUyMGZiYTU5MWRjNjZlNThmMmQwYzNlZTI1YTkzNTQ3MGYzMWNlYzM4MzhlMmZhNDM0MSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9, signature="ZnIHWclaHKIRt9H2puWSCaUb2OrI2YPUkdV5f0w/fAdlpllmgCGjYegWX2ThhjrcRbVwc8oravYaVo641X/33ZOmg1W9luZg2rV9Zc16dgTXkDQlJSi8bpEKK2iUMEU5oa/fb3WG3wCYM4EUbataiiizQdMKl0pG81uRDS45QSdWvowbNMvUA+tL97h7nnrNgNU01NQJntJuzXg6JD6vC5bnDyDn5nXF0/KI69xpzSDupWxs6mmd03xbU18T9XX8mlgDgg549zRIaQM2OEihCHecu42e+yjFs5TiXOhpupm3FArJ87XrfzD17fupE0cr9PehXZzJxtLtzthgjqwb5nB3QmD8UFsqhFQBU0TxswGqBQxX1CeCwYvQGOXx3jE73/79Eq6BrGmwqwYs+SOk/qcIdpfdcK2y6q4KSDiJlBbYMCryYFPEUcKmTdOE2OkGniekvzO7AriApibZvt5R/jbS2dmMmUaNKIQFSINScyBH6JV5vMmneEUbhgNBangagVoGIsVAlRNBCKrQ/mTMaIgY+jE/HU8gQnvJAKOtnYrTXLyPvhXaJ4ix+pDGFkycjj7phi1FrLVHTpEewXhx5AvuNY23m+Y9lHp2/687PDoSsryD4e1rJkFs4psmZxCDHRq4x1nmHR3ZvZeRAQgX8LytPbl+PD8N7rJ6lhNRwY4=]
+java.lang.IllegalArgumentException: Illegal base64 character 22
+	at java.base/java.util.Base64$Decoder.decode0(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.validateProperty(YggdrasilServicesKeyInfo.java:158)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.lambda$getPropertySignatureState$0(YggdrasilMinecraftSessionService.java:185)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.getPropertySignatureState(YggdrasilMinecraftSessionService.java:185)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.unpackTextures(YggdrasilMinecraftSessionService.java:128)
+	at knot//net.minecraft.client.resources.SkinManager$1.lambda$load$0(SkinManager.java:60)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[23:34:52] [Worker-Main-15/ERROR]: Malformed signature encoding on property Property[name=textures, value=ewogICJ0aW1lc3RhbXAiIDogMTY4MDQ3ODUzNDE0MCwKICAicHJvZmlsZUlkIiA6ICIwOGQ4Nzg3ZDFiYzY0MWE2YWNlNzdjMzliNzVmODZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYWdpa2xvb24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNmODNiYmFhMTA5YWUyMGZiYTU5MWRjNjZlNThmMmQwYzNlZTI1YTkzNTQ3MGYzMWNlYzM4MzhlMmZhNDM0MSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9, signature="ZnIHWclaHKIRt9H2puWSCaUb2OrI2YPUkdV5f0w/fAdlpllmgCGjYegWX2ThhjrcRbVwc8oravYaVo641X/33ZOmg1W9luZg2rV9Zc16dgTXkDQlJSi8bpEKK2iUMEU5oa/fb3WG3wCYM4EUbataiiizQdMKl0pG81uRDS45QSdWvowbNMvUA+tL97h7nnrNgNU01NQJntJuzXg6JD6vC5bnDyDn5nXF0/KI69xpzSDupWxs6mmd03xbU18T9XX8mlgDgg549zRIaQM2OEihCHecu42e+yjFs5TiXOhpupm3FArJ87XrfzD17fupE0cr9PehXZzJxtLtzthgjqwb5nB3QmD8UFsqhFQBU0TxswGqBQxX1CeCwYvQGOXx3jE73/79Eq6BrGmwqwYs+SOk/qcIdpfdcK2y6q4KSDiJlBbYMCryYFPEUcKmTdOE2OkGniekvzO7AriApibZvt5R/jbS2dmMmUaNKIQFSINScyBH6JV5vMmneEUbhgNBangagVoGIsVAlRNBCKrQ/mTMaIgY+jE/HU8gQnvJAKOtnYrTXLyPvhXaJ4ix+pDGFkycjj7phi1FrLVHTpEewXhx5AvuNY23m+Y9lHp2/687PDoSsryD4e1rJkFs4psmZxCDHRq4x1nmHR3ZvZeRAQgX8LytPbl+PD8N7rJ6lhNRwY4=]
+java.lang.IllegalArgumentException: Illegal base64 character 22
+	at java.base/java.util.Base64$Decoder.decode0(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.validateProperty(YggdrasilServicesKeyInfo.java:158)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.lambda$getPropertySignatureState$0(YggdrasilMinecraftSessionService.java:185)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.getPropertySignatureState(YggdrasilMinecraftSessionService.java:185)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.unpackTextures(YggdrasilMinecraftSessionService.java:128)
+	at knot//net.minecraft.client.resources.SkinManager$1.lambda$load$0(SkinManager.java:60)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[23:34:52] [Worker-Main-15/WARN]: Profile contained invalid signature for textures property (profile id: c3092483-f2ce-2cdb-b6c3-6315879f32c9)
+[23:34:52] [Worker-Main-2/ERROR]: Malformed signature encoding on property Property[name=textures, value=ewogICJ0aW1lc3RhbXAiIDogMTY4MDQ3ODUzNDE0MCwKICAicHJvZmlsZUlkIiA6ICIwOGQ4Nzg3ZDFiYzY0MWE2YWNlNzdjMzliNzVmODZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYWdpa2xvb24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNmODNiYmFhMTA5YWUyMGZiYTU5MWRjNjZlNThmMmQwYzNlZTI1YTkzNTQ3MGYzMWNlYzM4MzhlMmZhNDM0MSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9, signature="ZnIHWclaHKIRt9H2puWSCaUb2OrI2YPUkdV5f0w/fAdlpllmgCGjYegWX2ThhjrcRbVwc8oravYaVo641X/33ZOmg1W9luZg2rV9Zc16dgTXkDQlJSi8bpEKK2iUMEU5oa/fb3WG3wCYM4EUbataiiizQdMKl0pG81uRDS45QSdWvowbNMvUA+tL97h7nnrNgNU01NQJntJuzXg6JD6vC5bnDyDn5nXF0/KI69xpzSDupWxs6mmd03xbU18T9XX8mlgDgg549zRIaQM2OEihCHecu42e+yjFs5TiXOhpupm3FArJ87XrfzD17fupE0cr9PehXZzJxtLtzthgjqwb5nB3QmD8UFsqhFQBU0TxswGqBQxX1CeCwYvQGOXx3jE73/79Eq6BrGmwqwYs+SOk/qcIdpfdcK2y6q4KSDiJlBbYMCryYFPEUcKmTdOE2OkGniekvzO7AriApibZvt5R/jbS2dmMmUaNKIQFSINScyBH6JV5vMmneEUbhgNBangagVoGIsVAlRNBCKrQ/mTMaIgY+jE/HU8gQnvJAKOtnYrTXLyPvhXaJ4ix+pDGFkycjj7phi1FrLVHTpEewXhx5AvuNY23m+Y9lHp2/687PDoSsryD4e1rJkFs4psmZxCDHRq4x1nmHR3ZvZeRAQgX8LytPbl+PD8N7rJ6lhNRwY4=]
+java.lang.IllegalArgumentException: Illegal base64 character 22
+	at java.base/java.util.Base64$Decoder.decode0(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.validateProperty(YggdrasilServicesKeyInfo.java:158)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.lambda$getPropertySignatureState$0(YggdrasilMinecraftSessionService.java:185)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.getPropertySignatureState(YggdrasilMinecraftSessionService.java:185)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.unpackTextures(YggdrasilMinecraftSessionService.java:128)
+	at knot//net.minecraft.client.resources.SkinManager$1.lambda$load$0(SkinManager.java:60)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[23:34:52] [Worker-Main-2/ERROR]: Malformed signature encoding on property Property[name=textures, value=ewogICJ0aW1lc3RhbXAiIDogMTY4MDQ3ODUzNDE0MCwKICAicHJvZmlsZUlkIiA6ICIwOGQ4Nzg3ZDFiYzY0MWE2YWNlNzdjMzliNzVmODZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYWdpa2xvb24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNmODNiYmFhMTA5YWUyMGZiYTU5MWRjNjZlNThmMmQwYzNlZTI1YTkzNTQ3MGYzMWNlYzM4MzhlMmZhNDM0MSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9, signature="ZnIHWclaHKIRt9H2puWSCaUb2OrI2YPUkdV5f0w/fAdlpllmgCGjYegWX2ThhjrcRbVwc8oravYaVo641X/33ZOmg1W9luZg2rV9Zc16dgTXkDQlJSi8bpEKK2iUMEU5oa/fb3WG3wCYM4EUbataiiizQdMKl0pG81uRDS45QSdWvowbNMvUA+tL97h7nnrNgNU01NQJntJuzXg6JD6vC5bnDyDn5nXF0/KI69xpzSDupWxs6mmd03xbU18T9XX8mlgDgg549zRIaQM2OEihCHecu42e+yjFs5TiXOhpupm3FArJ87XrfzD17fupE0cr9PehXZzJxtLtzthgjqwb5nB3QmD8UFsqhFQBU0TxswGqBQxX1CeCwYvQGOXx3jE73/79Eq6BrGmwqwYs+SOk/qcIdpfdcK2y6q4KSDiJlBbYMCryYFPEUcKmTdOE2OkGniekvzO7AriApibZvt5R/jbS2dmMmUaNKIQFSINScyBH6JV5vMmneEUbhgNBangagVoGIsVAlRNBCKrQ/mTMaIgY+jE/HU8gQnvJAKOtnYrTXLyPvhXaJ4ix+pDGFkycjj7phi1FrLVHTpEewXhx5AvuNY23m+Y9lHp2/687PDoSsryD4e1rJkFs4psmZxCDHRq4x1nmHR3ZvZeRAQgX8LytPbl+PD8N7rJ6lhNRwY4=]
+java.lang.IllegalArgumentException: Illegal base64 character 22
+	at java.base/java.util.Base64$Decoder.decode0(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.validateProperty(YggdrasilServicesKeyInfo.java:158)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.lambda$getPropertySignatureState$0(YggdrasilMinecraftSessionService.java:185)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.getPropertySignatureState(YggdrasilMinecraftSessionService.java:185)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.unpackTextures(YggdrasilMinecraftSessionService.java:128)
+	at knot//net.minecraft.client.resources.SkinManager$1.lambda$load$0(SkinManager.java:60)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[23:34:52] [Worker-Main-2/WARN]: Profile contained invalid signature for textures property (profile id: 236ca997-b543-2002-a7b6-13c11950fe9b)
+[23:34:52] [Render thread/WARN]: Requested creation of existing team 'fkt_Scion '
+[23:34:52] [Render thread/WARN]: Requested creation of existing team 'fkt_Scion '
+[23:34:52] [Worker-Main-7/ERROR]: Malformed signature encoding on property Property[name=textures, value=ewogICJ0aW1lc3RhbXAiIDogMTY4MDQ3ODUzNDE0MCwKICAicHJvZmlsZUlkIiA6ICIwOGQ4Nzg3ZDFiYzY0MWE2YWNlNzdjMzliNzVmODZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYWdpa2xvb24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNmODNiYmFhMTA5YWUyMGZiYTU5MWRjNjZlNThmMmQwYzNlZTI1YTkzNTQ3MGYzMWNlYzM4MzhlMmZhNDM0MSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9, signature="ZnIHWclaHKIRt9H2puWSCaUb2OrI2YPUkdV5f0w/fAdlpllmgCGjYegWX2ThhjrcRbVwc8oravYaVo641X/33ZOmg1W9luZg2rV9Zc16dgTXkDQlJSi8bpEKK2iUMEU5oa/fb3WG3wCYM4EUbataiiizQdMKl0pG81uRDS45QSdWvowbNMvUA+tL97h7nnrNgNU01NQJntJuzXg6JD6vC5bnDyDn5nXF0/KI69xpzSDupWxs6mmd03xbU18T9XX8mlgDgg549zRIaQM2OEihCHecu42e+yjFs5TiXOhpupm3FArJ87XrfzD17fupE0cr9PehXZzJxtLtzthgjqwb5nB3QmD8UFsqhFQBU0TxswGqBQxX1CeCwYvQGOXx3jE73/79Eq6BrGmwqwYs+SOk/qcIdpfdcK2y6q4KSDiJlBbYMCryYFPEUcKmTdOE2OkGniekvzO7AriApibZvt5R/jbS2dmMmUaNKIQFSINScyBH6JV5vMmneEUbhgNBangagVoGIsVAlRNBCKrQ/mTMaIgY+jE/HU8gQnvJAKOtnYrTXLyPvhXaJ4ix+pDGFkycjj7phi1FrLVHTpEewXhx5AvuNY23m+Y9lHp2/687PDoSsryD4e1rJkFs4psmZxCDHRq4x1nmHR3ZvZeRAQgX8LytPbl+PD8N7rJ6lhNRwY4=]
+java.lang.IllegalArgumentException: Illegal base64 character 22
+	at java.base/java.util.Base64$Decoder.decode0(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.validateProperty(YggdrasilServicesKeyInfo.java:158)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.lambda$getPropertySignatureState$0(YggdrasilMinecraftSessionService.java:185)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.getPropertySignatureState(YggdrasilMinecraftSessionService.java:185)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.unpackTextures(YggdrasilMinecraftSessionService.java:128)
+	at knot//net.minecraft.client.resources.SkinManager$1.lambda$load$0(SkinManager.java:60)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[23:34:52] [Worker-Main-7/ERROR]: Malformed signature encoding on property Property[name=textures, value=ewogICJ0aW1lc3RhbXAiIDogMTY4MDQ3ODUzNDE0MCwKICAicHJvZmlsZUlkIiA6ICIwOGQ4Nzg3ZDFiYzY0MWE2YWNlNzdjMzliNzVmODZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYWdpa2xvb24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNmODNiYmFhMTA5YWUyMGZiYTU5MWRjNjZlNThmMmQwYzNlZTI1YTkzNTQ3MGYzMWNlYzM4MzhlMmZhNDM0MSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9, signature="ZnIHWclaHKIRt9H2puWSCaUb2OrI2YPUkdV5f0w/fAdlpllmgCGjYegWX2ThhjrcRbVwc8oravYaVo641X/33ZOmg1W9luZg2rV9Zc16dgTXkDQlJSi8bpEKK2iUMEU5oa/fb3WG3wCYM4EUbataiiizQdMKl0pG81uRDS45QSdWvowbNMvUA+tL97h7nnrNgNU01NQJntJuzXg6JD6vC5bnDyDn5nXF0/KI69xpzSDupWxs6mmd03xbU18T9XX8mlgDgg549zRIaQM2OEihCHecu42e+yjFs5TiXOhpupm3FArJ87XrfzD17fupE0cr9PehXZzJxtLtzthgjqwb5nB3QmD8UFsqhFQBU0TxswGqBQxX1CeCwYvQGOXx3jE73/79Eq6BrGmwqwYs+SOk/qcIdpfdcK2y6q4KSDiJlBbYMCryYFPEUcKmTdOE2OkGniekvzO7AriApibZvt5R/jbS2dmMmUaNKIQFSINScyBH6JV5vMmneEUbhgNBangagVoGIsVAlRNBCKrQ/mTMaIgY+jE/HU8gQnvJAKOtnYrTXLyPvhXaJ4ix+pDGFkycjj7phi1FrLVHTpEewXhx5AvuNY23m+Y9lHp2/687PDoSsryD4e1rJkFs4psmZxCDHRq4x1nmHR3ZvZeRAQgX8LytPbl+PD8N7rJ6lhNRwY4=]
+java.lang.IllegalArgumentException: Illegal base64 character 22
+	at java.base/java.util.Base64$Decoder.decode0(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.validateProperty(YggdrasilServicesKeyInfo.java:158)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.lambda$getPropertySignatureState$0(YggdrasilMinecraftSessionService.java:185)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.getPropertySignatureState(YggdrasilMinecraftSessionService.java:185)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.unpackTextures(YggdrasilMinecraftSessionService.java:128)
+	at knot//net.minecraft.client.resources.SkinManager$1.lambda$load$0(SkinManager.java:60)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[23:34:52] [Worker-Main-14/ERROR]: Malformed signature encoding on property Property[name=textures, value=ewogICJ0aW1lc3RhbXAiIDogMTY4MDQ3ODUzNDE0MCwKICAicHJvZmlsZUlkIiA6ICIwOGQ4Nzg3ZDFiYzY0MWE2YWNlNzdjMzliNzVmODZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYWdpa2xvb24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNmODNiYmFhMTA5YWUyMGZiYTU5MWRjNjZlNThmMmQwYzNlZTI1YTkzNTQ3MGYzMWNlYzM4MzhlMmZhNDM0MSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9, signature="ZnIHWclaHKIRt9H2puWSCaUb2OrI2YPUkdV5f0w/fAdlpllmgCGjYegWX2ThhjrcRbVwc8oravYaVo641X/33ZOmg1W9luZg2rV9Zc16dgTXkDQlJSi8bpEKK2iUMEU5oa/fb3WG3wCYM4EUbataiiizQdMKl0pG81uRDS45QSdWvowbNMvUA+tL97h7nnrNgNU01NQJntJuzXg6JD6vC5bnDyDn5nXF0/KI69xpzSDupWxs6mmd03xbU18T9XX8mlgDgg549zRIaQM2OEihCHecu42e+yjFs5TiXOhpupm3FArJ87XrfzD17fupE0cr9PehXZzJxtLtzthgjqwb5nB3QmD8UFsqhFQBU0TxswGqBQxX1CeCwYvQGOXx3jE73/79Eq6BrGmwqwYs+SOk/qcIdpfdcK2y6q4KSDiJlBbYMCryYFPEUcKmTdOE2OkGniekvzO7AriApibZvt5R/jbS2dmMmUaNKIQFSINScyBH6JV5vMmneEUbhgNBangagVoGIsVAlRNBCKrQ/mTMaIgY+jE/HU8gQnvJAKOtnYrTXLyPvhXaJ4ix+pDGFkycjj7phi1FrLVHTpEewXhx5AvuNY23m+Y9lHp2/687PDoSsryD4e1rJkFs4psmZxCDHRq4x1nmHR3ZvZeRAQgX8LytPbl+PD8N7rJ6lhNRwY4=]
+java.lang.IllegalArgumentException: Illegal base64 character 22
+	at java.base/java.util.Base64$Decoder.decode0(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.validateProperty(YggdrasilServicesKeyInfo.java:158)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.lambda$getPropertySignatureState$0(YggdrasilMinecraftSessionService.java:185)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.getPropertySignatureState(YggdrasilMinecraftSessionService.java:185)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.unpackTextures(YggdrasilMinecraftSessionService.java:128)
+	at knot//net.minecraft.client.resources.SkinManager$1.lambda$load$0(SkinManager.java:60)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[23:34:52] [Worker-Main-7/WARN]: Profile contained invalid signature for textures property (profile id: b6acc4ed-f1fc-26e7-b7bf-739ba92199b8)
+[23:34:52] [Worker-Main-14/ERROR]: Malformed signature encoding on property Property[name=textures, value=ewogICJ0aW1lc3RhbXAiIDogMTY4MDQ3ODUzNDE0MCwKICAicHJvZmlsZUlkIiA6ICIwOGQ4Nzg3ZDFiYzY0MWE2YWNlNzdjMzliNzVmODZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNYWdpa2xvb24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNmODNiYmFhMTA5YWUyMGZiYTU5MWRjNjZlNThmMmQwYzNlZTI1YTkzNTQ3MGYzMWNlYzM4MzhlMmZhNDM0MSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9, signature="ZnIHWclaHKIRt9H2puWSCaUb2OrI2YPUkdV5f0w/fAdlpllmgCGjYegWX2ThhjrcRbVwc8oravYaVo641X/33ZOmg1W9luZg2rV9Zc16dgTXkDQlJSi8bpEKK2iUMEU5oa/fb3WG3wCYM4EUbataiiizQdMKl0pG81uRDS45QSdWvowbNMvUA+tL97h7nnrNgNU01NQJntJuzXg6JD6vC5bnDyDn5nXF0/KI69xpzSDupWxs6mmd03xbU18T9XX8mlgDgg549zRIaQM2OEihCHecu42e+yjFs5TiXOhpupm3FArJ87XrfzD17fupE0cr9PehXZzJxtLtzthgjqwb5nB3QmD8UFsqhFQBU0TxswGqBQxX1CeCwYvQGOXx3jE73/79Eq6BrGmwqwYs+SOk/qcIdpfdcK2y6q4KSDiJlBbYMCryYFPEUcKmTdOE2OkGniekvzO7AriApibZvt5R/jbS2dmMmUaNKIQFSINScyBH6JV5vMmneEUbhgNBangagVoGIsVAlRNBCKrQ/mTMaIgY+jE/HU8gQnvJAKOtnYrTXLyPvhXaJ4ix+pDGFkycjj7phi1FrLVHTpEewXhx5AvuNY23m+Y9lHp2/687PDoSsryD4e1rJkFs4psmZxCDHRq4x1nmHR3ZvZeRAQgX8LytPbl+PD8N7rJ6lhNRwY4=]
+java.lang.IllegalArgumentException: Illegal base64 character 22
+	at java.base/java.util.Base64$Decoder.decode0(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.validateProperty(YggdrasilServicesKeyInfo.java:158)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.lambda$getPropertySignatureState$0(YggdrasilMinecraftSessionService.java:185)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.noneMatch(Unknown Source)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.getPropertySignatureState(YggdrasilMinecraftSessionService.java:185)
+	at knot//com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.unpackTextures(YggdrasilMinecraftSessionService.java:128)
+	at knot//net.minecraft.client.resources.SkinManager$1.lambda$load$0(SkinManager.java:60)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[23:34:52] [Worker-Main-14/WARN]: Profile contained invalid signature for textures property (profile id: e2968042-7c85-23af-881a-f8af522558c9)
+[23:35:01] [Render thread/INFO]: [System] [CHAT] New day! Your Lottery buff changed!
+[23:35:01] [Render thread/INFO]: [System] [CHAT] New buff: Gain +50 Helix Fortune.
+[23:35:01] [Render thread/INFO]: [System] [CHAT] New day! Your Sky Mall buff changed!
+[23:35:01] [Render thread/INFO]: [System] [CHAT] New buff: Gain +15% more Powder while mining.
+[23:35:01] [Render thread/INFO]: [System] [CHAT] You can disable this messaging by toggling Sky Mall in your /hotm!
+[23:35:25] [Render thread/INFO]: [System] [CHAT]  
+[23:35:25] [Render thread/INFO]: [System] [CHAT] §f              §7You have §3397,171 §7materials stashed away!
+[23:35:25] [Render thread/INFO]: [System] [CHAT] §f             §8(This totals 22 types of materials stashed!)
+[23:35:25] [Render thread/INFO]: [System] [CHAT] §f                §3§l>>> §3§lCLICK HERE§b to pick them up! §3§l<<<
+[23:35:25] [Render thread/INFO]: [System] [CHAT]   
+[23:35:34] [Render thread/INFO]: Reloading ResourceManager: vanilla, fabric-advancement-api-v1, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-getter-api-v2, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-creative-tab-api-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-debug-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-item-api-v1, fabric-key-mapping-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v3, fabric-menu-api-v1, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-permission-api-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-resource-loader-v1, fabric-screen-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, rareity
+[23:35:34] [Worker-Main-1/INFO]: Found unifont_all_no_pua-17.0.01.hex, loading
+[23:35:34] [Worker-Main-7/INFO]: Found unifont_pua-17.0.01.hex, loading
+[23:35:34] [Worker-Main-7/INFO]: Found unifont_jp_patch-17.0.01.hex, loading
+[23:35:35] [Render thread/INFO]: OpenAL initialized on device OpenAL Soft on Speakers (2- Realtek(R) Audio)
+[23:35:35] [Render thread/INFO]: Sound engine started
+[23:35:35] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[23:35:35] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[23:35:35] [Render thread/INFO]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[23:35:35] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[23:35:35] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[23:35:35] [Render thread/INFO]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[23:35:35] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[23:35:35] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[23:35:35] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[23:35:35] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[23:35:35] [Render thread/INFO]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[23:35:35] [Render thread/INFO]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[23:35:35] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[23:35:35] [Render thread/INFO]: Stopping!

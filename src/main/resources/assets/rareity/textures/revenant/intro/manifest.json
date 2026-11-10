@@ -1,0 +1,21 @@
+{
+  "fps": 60,
+  "frames": 468,
+  "frame_width": 256,
+  "frame_height": 144,
+  "columns": 8,
+  "rows": 8,
+  "padding": 1,
+  "shot_seconds": 7.65,
+  "pages": [
+    "page_00.png",
+    "page_01.png",
+    "page_02.png",
+    "page_03.png",
+    "page_04.png",
+    "page_05.png",
+    "page_06.png",
+    "page_07.png"
+  ],
+  "note": "Frame 459 is the shot. Java renderer constants must match this metadata. Opaque background."
+}

@@ -1,0 +1,7 @@
+ .../aristomenis/rareity/client/RareityClient.java  | 172 [32m+[m[31m--------------------[m
+ .../rareity/client/animation/AnimationManager.java |  41 [32m+++++[m
+ .../rareity/client/animation/DropAnimation.java    |  12 [32m++[m
+ .../client/animation/FishingFestivalAnimation.java | 143 [32m+++++++++++++++++[m
+ .../rareity/client/command/RareityCommands.java    |  33 [32m++++[m
+ .../rareity/client/hud/DropOverlay.java            |  66 [32m++++++++[m
+ 6 files changed, 302 insertions(+), 165 deletions(-)
